@@ -27,7 +27,7 @@ github_username:  p135246
 author: p135246@gmail.com
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap

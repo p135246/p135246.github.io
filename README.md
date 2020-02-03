@@ -1,3 +1,1 @@
-# git website
-
-* see [p135246.github.io](https://p135246.github.io)
+# git website [p135246.github.io](https://p135246.github.io)

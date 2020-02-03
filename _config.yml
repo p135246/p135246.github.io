@@ -18,17 +18,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Pavel's github page
-email: p135246(at)gmail.com
+title: Pavel's homepage
+email: p135246@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Pavel Hajek's website with git repositories related to math, physics and academics.
+  Pavel Hajek's website about topics related (not only) to math, physic and academics.
+url: https://p135246.github.io
 github_username:  p135246
+author: p135246@gmail.com
 
 # Build settings
-theme: jekyll-theme-leap-day
+theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -2,4 +2,4 @@
 layout: home
 ---
 
-Currently, there is only a list of my git repositories but more stuff might come.
+Currently, there is only a list of my git repositories, but more stuff might come.

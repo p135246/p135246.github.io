@@ -33,7 +33,7 @@ However, it was not that straightforward and I had to recall some knowledge abou
 	This produces a static website (HTML, CSS, JavaScript) in `_site`.
 	The website can be tested on the local machine by running `bundler.ruby2.5 exec jekyll serve` and then opening `http://localhost:4000/` in your favorite internet browser.
 4. 	I encountered a problem of adding a static file (my CV) to the website.
-	I created a directory `assets/pdf` in the project folder and created a symlink `academic-cv.pdf` in it.
+	I created a directory `assets/pdf` in the project folder and copied `academic-cv.pdf` in it.
 	I referred to it by defining `[jekyll-home]:{{ site.url }}/assets/pdf/academic-cv.pdf` and writing `[Academic CV][jekyll-home]` in `about.markdown`.
 	However, the link was not working because `bundler.ruby2.5 exec jekyll build` did not copy `assets/pdf/academic-cv.pdf` in `_site`.
 	The solution was to add the following to `_config.yml`:
@@ -41,6 +41,7 @@ However, it was not that straightforward and I had to recall some knowledge abou
 			include:
 				- assets/
 
+	Also note that I first tried to include a symlink to `academic-cv.pdf`, but for some strange reasons it was not copied into _site and was not working even on GitHup Pages, although Git should replace symlinks by copies in a commit.
 5.	If updating the website after a `git push master origin` takes too long, it is possible that there is an error message in `GitHub/Settings`.
 	The repository containing the website must be public.
 	If it is switched to private, the website is not published anymore.

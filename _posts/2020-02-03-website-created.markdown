@@ -66,6 +66,7 @@ I also had to think about the whole concept to confirm my choices from a year ag
 	After that, I was getting another error which sad that I was trying to publish sensitive data.
 	This was solved by removing `Gemfile.lock`, which seems to contain informations about versions of gems on the machine, from the commit.
 	Before I discovered and corrected these issues, GitHub Pages had been silently refusing to publish the website and it took me a while to find out that there were error messages in `GitHub/Settings`.	
+	I discovered much later that GitHub was sending build errors and error messages via email!
 
 6.	I should be using the folder `_drafts/` which contains posts under construction which are not incorporated by Jekyll in the final website.
 	Weirdly, this directory seems not to be included in a git commit even if it is not in `.gitignore` **(?)**.

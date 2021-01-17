@@ -3,9 +3,114 @@ layout: post
 title:  "Notes about maintaing this website (constantly updated)"
 date:   2020-02-02 15:36:00 -0000
 categories: changelog
+comments: true
+mathjax: true
 ---
+## January 17, 2021 --- Adding support for Mathjax and comments
 
-## February 3, 2021 --- Upload of a CV
+I wanted to include commentars and [Mathjax][mathjax] support in my posts.
+
+1.	There is various ways to include commentars in a static website hosted on GitHub.
+	One way is to use an external web application and database like [Disqus][disqus] and an other way is to use an external script [Staticman][staticman], which simulates the dynamic behaviour by processing and pushing user input to GitHub automatically.
+
+	Nevertheless, there is also [Utterances][utterances] which works on a similar principle as Staticman, but instead of storing comments in new files in the repository,  it creates an Issue in the native GitHub discussion system and puts the commentaries there!
+	This is seemingly the best solution, and hence I decided to use **Utterances**.
+	Staticman might be useful in the future when I need, e.g., input forms.
+
+2. 	A disadvange of the GitHub's issues and comments system is that it does not support Mathjax.
+	In order to insert formulas in the comments, internet people recommend to use
+			
+		<img src="https://latex.codecogs.com/svg.latex?https://latex.codecogs.com/svg.latex?f(x)=\pi^2+x+\sum_{i=1}^ka_i"/>
+		
+	which renders the formula $$f(x)=\pi^2+x+\sum_{i=1}^ka_i$$ as an image.
+	If your formula contains a space or some special characters, please, test the URL before posting your comment.
+
+3.	Github comments support a ton of emoji's, which are listed for instance [here][emojis].
+
+4.	I wanted to modify the default layout for a post so that comments and mathjax can be turned on and off liquidly by setting the variables `comments` and `mathjax` in the  YAML front matter of a post (the header between `--- ... ---`).
+	Internet people claim that it can not be done easily and one has to copy the default layouts of the jekyll theme in use to the project folder and modify those.  
+	I use the `mimina` theme, which is installed as a gem.
+	I ran `bundler.ruby2.5 info minima` to get the path to the gem, which is `/usr/lib64/ruby/gems/2.5.0/gems/minima-2.5.1` in my case.
+	I displayed the directory structure using the `tree` command and had a look at what is in `_includes` (HTML snippets to be included), `_layouts` (page layouts) and `_sass` (some CSS related things).
+	Because I wanted to modify the layout for posts, I copied  `_layouts/post.html` to the project directory.
+	I then created the files `_includes/mathjax-support.html` and `_includes/comments-utterances.html` with the following content in the project directory. 
+
+	File `_includes/mathjax-support.html:` 
+
+		<!-- for mathjax support -->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			TeX: { equationNumbers: { autoNumber: "AMS" } }
+			});
+		</script>
+		<script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+
+	File `_includes/comments-utterances:`
+
+		<!-- for comment section -->
+		<script src="https://utteranc.es/client.js"
+			repo="p135246/p135246.github.io"
+			issue-term="title"
+			label="comment"
+			theme="preferred-color-scheme"
+			crossorigin="anonymous"
+			async>
+		</script>
+
+	Of course that I used Google to find these snippets.
+
+	Finally, I modified `_layouts/post.html` by including
+
+	{% raw %}
+		{%- if page.mathjax -%}
+			{%- include mathjax-support.html -%}
+		{%- endif -%}
+	{% endraw %}
+
+	in the header tag and
+
+	{% raw %}
+		{%- if page.comments -%}
+			{%- include comments-utterances.html -%}
+		{%- endif -%}
+	{% endraw %}
+
+	at the end of the article tag, which is where I want the comments to be displayed.
+	Note that I quote the liquid syntax by enclosing it in the `raw` and `endraw` liquid commands.
+
+	Now, Mathjax support and the comment section, which appears on the bottom of the page, can be turned on and off in the header as in the example of this post:
+
+		---
+		layout: post
+		title:  "Notes about maintaing this website (constantly updated)"
+		date:   2020-02-02 15:36:00 -0000
+		categories: changelog
+		comments: true
+		mathjax: true
+		---
+
+5.	A note on Mathjax.
+	Formulas are enclosed in `$$...$$` and whether they are inline, like $$\sqrt{45\pi}$$, or displayed, like
+
+	$$
+	\begin{aligned}
+		a_1 &= 16\pi e^2, \\
+		a_2 &= 5.3534, \\
+		a_3 &= \ldots,
+	\end{aligned}
+	\qquad
+	A = 	\begin{pmatrix}
+			4 & 8 & 5 \\
+			2 & 1 & 0 \\
+			3 & 9 & 6
+		\end{pmatrix},
+	$$
+
+	is decided by the markdown indentation.
+
+ 
+## January 15, 2021 --- Upload of a CV
 
 After a year of not doing anything on the website, I decided to upload my CV.
 Unfortunately, it was not that straightforward and I had to recall some knowledge of Jekyll, Ruby, OpenSuse and Markdown.
@@ -78,7 +183,12 @@ I also had to think about the whole concept to confirm my choices from a year ag
 
 My first post after setting up the website using `jekyll` (see [jekyll-docs][jekyll-docs]).
 I put together a [list of git repositories]({% link git-repositories.markdown %}) which I want to publish.  
-		
+
+[emojis]:https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+[disqus]:https://disqus.com/
+[staticman]:https://staticman.net/
+[mathjax]:https://www.mathjax.org/
+[utterances]:https://utteranc.es/
 [jekyll-docs]:https://jekyllrb.com/docs/home
 [github-pages]:https://pages.github.com/
 [jekyll-home]:https://jekyllrb.com/
@@ -87,11 +197,3 @@ I put together a [list of git repositories]({% link git-repositories.markdown %}
 [bundler-home]:https://bundler.io/
 [rvm-home]:https://rvm.io/
 
-<script src="https://utteranc.es/client.js"
-        repo="p135246/p135246.github.io"
-        issue-term="title"
-        label="comment"
-        theme="preferred-color-scheme"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -86,3 +86,12 @@ I put together a [list of git repositories]({% link git-repositories.markdown %}
 [ruby-home]:https://rubyonrails.org/
 [bundler-home]:https://bundler.io/
 [rvm-home]:https://rvm.io/
+
+<script src="https://utteranc.es/client.js"
+        repo="p135246/p135246.github.io"
+        issue-term="title"
+        label="comment"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

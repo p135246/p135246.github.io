@@ -43,7 +43,7 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 			TeX: { equationNumbers: { autoNumber: "AMS" } }
 			});
 		</script>
-		<script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 		</script>
 
 	File `_includes/comments-utterances:`
@@ -78,6 +78,11 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 
 	at the end of the article tag, which is where I want the comments to be displayed.
 	Note that I quote the liquid syntax by enclosing it in the `raw` and `endraw` liquid commands.
+
+	In `_config.yml`, I put the following
+
+		markdown: kramdown
+		math_engine: mathjax
 
 	Now, Mathjax support and the comment section, which appears on the bottom of the page, can be turned on and off in the header as in the example of this post:
 

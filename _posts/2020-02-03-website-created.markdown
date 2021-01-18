@@ -18,14 +18,17 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 	Staticman might be useful in the future when I need, e.g., input forms.
 
 2. 	A disadvange of the GitHub's issues and comments system is that it does not support Mathjax.
-	In order to insert formulas in the comments, internet people recommend to use
+	In order to insert formulas in the comments, internet people (:= people on the internet) recommend to use
 			
-		<img src="https://latex.codecogs.com/svg.latex?https://latex.codecogs.com/svg.latex?f(x)=\pi^2+x+\sum_{i=1}^ka_i"/>
+		<img src="https://latex.codecogs.com/svg.latex?f(x)=\pi^2+x+\sum_{i=1}^ka_i"/>
 		
-	which renders the formula $$f(x)=\pi^2+x+\sum_{i=1}^ka_i$$ as an image.
+	which renders the formula $$f(x)=\pi^2+x+\sum_{i=1}^ka_i$$ as an image on the fly.
 	If your formula contains a space or some special characters, please, test the URL before posting your comment.
+	For instance, the white space can be written as `%20` in the URL.
 
 3.	Github comments support a ton of emoji's, which are listed for instance [here][emojis].
+	I should find out how to use emoji's in my posts **(?)**. 
+	Some emojis: :blush:, :bowtie:, :hankey:, :vomiting_face:
 
 4.	I wanted to modify the default layout for a post so that comments and mathjax can be turned on and off liquidly by setting the variables `comments` and `mathjax` in the  YAML front matter of a post (the header between `--- ... ---`).
 	Internet people claim that it can not be done easily and one has to copy the default layouts of the jekyll theme in use to the project folder and modify those.  
@@ -58,7 +61,7 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 			async>
 		</script>
 
-	Of course that I used Google to find these snippets.
+	These snippets can be found in the documentation of [Mathjax][mathjax] and of [Utterances][utterances], respectively.
 
 	Finally, I modified `_layouts/post.html` by including
 

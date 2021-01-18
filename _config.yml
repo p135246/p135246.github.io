@@ -34,7 +34,9 @@ plugins:
   - jekyll-feed
   - jemoji
 markdown: kramdown
-math_engine: mathjax
+  input: GFM
+  math_engine: mathjax
+  highlighter: rouge
 #remote_theme: benbalter/retlab
 # Exclude from processing.
 # The following items will not be processed, by default.

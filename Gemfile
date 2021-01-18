@@ -29,3 +29,7 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 gem "jemoji"
+# Emojis supported by GitHub Pages
+
+gem "rouge"
+# Syntax highlighter supported by GitHub Pages

@@ -6,7 +6,7 @@ categories: changelog
 comments: true
 mathjax: true
 ---
-## January 17, 2021 --- Adding support for comments, mathjax and emojis
+## January 17, 2021 --- Adding support for comments, mathjax, emojis and syntax highlighting
 
 I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 
@@ -19,9 +19,9 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 
 2. 	A disadvange of the GitHub's issues and comments system is that it does not support Mathjax.
 	In order to insert formulas in the comments, internet people (:= people on the internet) recommend to use
-			
-		<img src="https://latex.codecogs.com/svg.latex?f(x)=\pi^2+x+\sum_{i=1}^ka_i"/>
-		
+	```html
+	<img src="https://latex.codecogs.com/svg.latex?f(x)=\pi^2+x+\sum_{i=1}^ka_i"/>
+	```
 	which renders the formula $$f(x)=\pi^2+x+\sum_{i=1}^ka_i$$ as an image on the fly.
 	If your formula contains a space or some special characters, please, test the URL before posting your comment.
 	For instance, the white space can be written as `%20` in the URL.
@@ -33,7 +33,9 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 	In order to tell jekyll to use it, one has to add `jemoji` to the list of plugins in `_config.yml`.
 	Writing 
 	{% raw %}
-		:blush: :bowtie: :hankey: :+1:
+	```ruby
+	:blush: :bowtie: :hankey: :+1:
+	```
 	{% endraw %}
 	in Markdown produces  :blush:, :bowtie:, :hankey:, :+1:.
         Unfortunately, it seems like that there is not the :vomiting_face: emoji, which can be used normally in the comments. :cry:	
@@ -47,68 +49,72 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 	I then created the files `_includes/mathjax-support.html` and `_includes/comments-utterances.html` with the following content in the project directory. 
 
 	File `_includes/mathjax-support.html:` 
-
-		<!-- for mathjax support -->
-		<script type="text/x-mathjax-config">
-			MathJax.Hub.Config({
-			TeX: { equationNumbers: { autoNumber: "AMS" } }
-			});
-		</script>
-		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-		</script>
-
+	```html
+	<!-- for mathjax support -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		TeX: { equationNumbers: { autoNumber: "AMS" } }
+		});
+	</script>
+	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	```
 	File `_includes/comments-utterances:`
-
-		<!-- for comment section -->
-		<script src="https://utteranc.es/client.js"
-			repo="p135246/p135246.github.io"
-			issue-term="title"
-			label="comment"
-			theme="preferred-color-scheme"
-			crossorigin="anonymous"
-			async>
-		</script>
-
+	```html
+	<!-- for comment section -->
+	<script src="https://utteranc.es/client.js"
+		repo="p135246/p135246.github.io"
+		issue-term="title"
+		label="comment"
+		theme="preferred-color-scheme"
+		crossorigin="anonymous"
+		async>
+	</script>
+	```
 	These snippets can be found in the documentation of [Mathjax][mathjax] and of [Utterances][utterances], respectively.
 
 	Finally, I modified `_layouts/post.html` by including
-
 	{% raw %}
-		{%- if page.mathjax -%}
-			{%- include mathjax-support.html -%}
-		{%- endif -%}
+	```ruby
+	{%- if page.mathjax -%}
+		{%- include mathjax-support.html -%}
+	{%- endif -%}
+	```
 	{% endraw %}
-
 	in the header tag and
-
 	{% raw %}
-		{%- if page.comments -%}
-			{%- include comments-utterances.html -%}
-		{%- endif -%}
+	```ruby
+	{%- if page.comments -%}
+		{%- include comments-utterances.html -%}
+	{%- endif -%}
+	```
 	{% endraw %}
-
 	at the end of the article tag, which is where I want the comments to be displayed.
 	Note that I quote the liquid syntax by enclosing it in the `raw` and `endraw` liquid commands.
 
 	In `_config.yml`, I put the following
-
-		markdown: kramdown
-		math_engine: mathjax
-	
+	```ruby
+	markdown: kramdown
+	math_engine: mathjax	
+	input: GFM
+	highlighter: rouge
+	```	
 	The first option tells `jekyll` which Markdown interpreter to use and the second enables mathjax.
+	The third option tells to use [GitHub flavored Markdown][GFM] and the fourth to use the syntax highlighter [rogue][rogue]. 
 	See the official documentation of GitHub Pages about jekyll [here][github-pages-and-jekyll].
 	
 
 	Now, Mathjax support and the comment section, which appears on the bottom of the page, can be turned on and off in the header as in the example of this post:
-
-		---
-		layout: post
-		title:  "Notes about maintaing this website (constantly updated)"
-		date:   2020-02-02 15:36:00 -0000
-		categories: changelog
-		comments: true
-		mathjax: true
-		---
+	```ruby
+	---
+	layout: post
+	title:  "Notes about maintaing this website (constantly updated)"
+	date:   2020-02-02 15:36:00 -0000
+	categories: changelog
+	comments: true
+	mathjax: true
+	---
+	```
 
 5.	A note on Mathjax.
 	Formulas are enclosed in `$$...$$` and whether they are inline, like $$\sqrt{45\pi}$$, or displayed, like
@@ -129,7 +135,27 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 
 	is decided by the markdown indentation.
 
- 
+6.	In order to enable syntax highlighting, one has to add `rogue` to `_config.yml` as above.
+	The following construction, where `md` can be replaced by `html`, `ruby`, ...  highlihts the code:
+	````md
+	```md
+		Some markdown **code** here.
+	```
+	````
+	Note that in order to render this code block with three ticks, I had to enclose it in four ticks, and so on (the following was enclosed in five ticks):	
+	`````md
+	````md
+	```
+		Some markdown **code** here.
+	```
+	````
+	`````
+	Internet people say that in order to highliht inline code, the following construction has to be used
+	```
+	`x = 4`{:.ruby}
+	``` 
+	However, it produces `x = 4`{:.ruby}, which does not work on my local machine.
+
 ## January 15, 2021 --- Upload of a CV
 
 After a year of not doing anything on the website, I decided to upload my CV.
@@ -177,10 +203,10 @@ I also had to think about the whole concept to confirm my choices from a year ag
 	I referred to it by defining `[CV]:{{ site.url }}/assets/pdf/academic-cv.pdf` and writing `[Academic CV][CV]` in `about.markdown`.
 	However, the link was not working either locally or on GitHub because `bundler.ruby2.5 exec jekyll build` did not copy `assets/pdf/academic-cv.pdf` to `_site/`.
 	The solution was to add the following to `_config.yml`:
-
-			include:
-				- assets/
-
+	```ruby
+	include:
+		- assets/
+	```
 	Also note that I first created `academic-cv.pdf` as a symlink, but it was not copied to `_site/` and was not working on GitHub Pages even after modifying `_config.yml` as above.
 	This is strange because Git should replace symlinks by copies of the actual files in a commit, and hence it should have worked at least on GitHub Pages **(?)**.
 
@@ -204,6 +230,8 @@ I also had to think about the whole concept to confirm my choices from a year ag
 My first post after setting up the website using `jekyll` (see [jekyll-docs][jekyll-docs]).
 I put together a [list of git repositories]({% link git-repositories.markdown %}) which I want to publish.  
 
+[rogue]:http://rouge.jneen.net/
+[GFM]:https://github.github.com/gfm/
 [github-pages-and-jekyll]:https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll
 [emojis]:https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 [disqus]:https://disqus.com/

@@ -28,9 +28,9 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 
 3.	Github comments support a ton of emoji's, which are listed for instance [here][emojis].
 	Emojis can be also inserted in my posts.
-	The recommended plugin `jemoji` using GitHub's emojis is mentioned [here][github-pages-and-jekyll].
-	It is installed in `jekyll` by adding `gem "jemoji"` in `Gemfile` and running `bundler.ruby2.5 install` in the project directory. 
-	One also has to add the line ` - jemoji` in the list of plugins in `_config.yml`.
+	The recommended plugin `jemoji`, which uses GitHub's emojis, is mentioned in the [documentation][github-pages-and-jekyll].
+	The corresponding gem is installed on the local machine via Bundler by adding  `gem "jemoji"` in `Gemfile` and running `bundler.ruby2.5 install` in the project directory. 
+	In order to tell jekyll to use it, one has to add `jemoji` to the list of plugins in `_config.yml`.
 	Writing 
 	{% raw %}
 		:blush: :bowtie: :hankey: :+1:

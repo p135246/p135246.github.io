@@ -6,7 +6,7 @@ categories: changelog
 comments: true
 mathjax: true
 ---
-## January 17, 2021 --- Adding support for Mathjax and comments
+## January 17, 2021 --- Adding support for comments, mathjax and emojis
 
 I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 
@@ -94,6 +94,10 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 
 		markdown: kramdown
 		math_engine: mathjax
+	
+	The first option tells `jekyll` which Markdown interpreter to use and the second enables mathjax.
+	See the official documentation of GitHub Pages about jekyll [here][github-pages-and-jekyll].
+	
 
 	Now, Mathjax support and the comment section, which appears on the bottom of the page, can be turned on and off in the header as in the example of this post:
 

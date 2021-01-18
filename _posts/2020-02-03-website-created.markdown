@@ -27,8 +27,16 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 	For instance, the white space can be written as `%20` in the URL.
 
 3.	Github comments support a ton of emoji's, which are listed for instance [here][emojis].
-	I should find out how to use emoji's in my posts **(?)**. 
-	Some emojis: :blush:, :bowtie:, :hankey:, :vomiting_face:
+	Emojis can be also inserted in my posts.
+	The recommended plugin `jemoji` using GitHub's emojis is mentioned [here][github-pages-and-jekyll].
+	It is installed in `jekyll` by adding `gem "jemoji"` in `Gemfile` and running `bundler.ruby2.5 install` in the project directory. 
+	One also has to add the line ` - jemoji` in the list of plugins in `_config.yml`.
+	Writing 
+	{% raw %}
+		:blush: :bowtie: :hankey: :+1:
+	{% endraw %}
+	in Markdown produces  :blush:, :bowtie:, :hankey:, :+1:.
+        Unfortunately, it seems like that there is not the :vomiting_face: emoji, which can be used normally in the comments. :cry:	
 
 4.	I wanted to modify the default layout for a post so that comments and mathjax can be turned on and off liquidly by setting the variables `comments` and `mathjax` in the  YAML front matter of a post (the header between `--- ... ---`).
 	Internet people claim that it can not be done easily and one has to copy the default layouts of the jekyll theme in use to the project folder and modify those.  
@@ -192,6 +200,7 @@ I also had to think about the whole concept to confirm my choices from a year ag
 My first post after setting up the website using `jekyll` (see [jekyll-docs][jekyll-docs]).
 I put together a [list of git repositories]({% link git-repositories.markdown %}) which I want to publish.  
 
+[github-pages-and-jekyll]:https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll
 [emojis]:https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 [disqus]:https://disqus.com/
 [staticman]:https://staticman.net/

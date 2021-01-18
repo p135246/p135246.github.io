@@ -154,7 +154,7 @@ I wanted to include commentars and [Mathjax][mathjax] support in my posts.
 	```
 	`x = 4`{:.ruby}
 	``` 
-	However, it produces `x = 4`{:.ruby}, which does not work on my local machine.
+	However, it produces `x = 4`{:.ruby}, which does not seem to work on my local machine.
 
 ## January 15, 2021 --- Upload of a CV
 

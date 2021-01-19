@@ -33,5 +33,3 @@ gem "jemoji"
 
 gem "rouge"
 # Syntax highlighter supported by GitHub Pages
-
-gem "jekyll-analytics"

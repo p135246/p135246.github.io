@@ -33,10 +33,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jemoji
+  - jekyll-analytics
 markdown: kramdown
 input: GFM
 math_engine: mathjax
 highlighter: rouge
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-187585216-1      # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
 #remote_theme: benbalter/retlab
 # Exclude from processing.
 # The following items will not be processed, by default.

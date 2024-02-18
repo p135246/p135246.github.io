@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/images/favicon.ico"  | relative_url }}">
+    {%- if page.mathjax -%}
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
+      </script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+              type="text/javascript"
+              async>
+      </script>
+    {%- endif -%}
+    <style>
+      body {
+          max-width: 35em;
+          margin: 0 auto;
+        }
+      footer{
+            background-color: lightblue;
+            text-align: center;
+            font-size: small;
+            margin-bottom: 2ex;
+            margin-top: 2ex;
+            padding: .1em;
+            }
+      footer a {
+            text-decoration: none;
+            }
+      footer a:hover{
+            background-color: yellow;
+            }
+      header {
+          background-color: lightblue;
+          font-size: large;
+          margin-top: 2ex;
+          margin-bottom: 2ex;
+          }
+      nav {
+          padding: .2em;
+          }
+      nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          }
+      nav li {
+          display: inline;
+          margin-right: 1em;
+          }
+      nav li:hover {
+          background-color: yellow;
+          }
+      nav li a {
+          text-decoration: none;
+          padding: .1em;
+          }
+    </style>
+  </head>
+  <body>
+  <header>
+    <nav>
+        <ul>
+          <div>
+          <li><a href="/Math.html">MATH</a></li>
+          <li><a href="/IT.html">IT</a></li>
+          <li><a href="/Misc.html">MISC</a></li>
+          <li><a href="/Posts.html">POSTS</a></li>
+          </div>
+          <li style="margin-right: 0;"><a href="/index.html">ABOUT</a></li>
+        </ul>
+    </nav>
+  </header>
+  <section>{{ content }}</section>
+  {%- if page.utterances -%}
+    <script src="https://utteranc.es/client.js"
+        repo="p135246/p135246.github.io"
+        issue-term="title"
+        label="comment"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+  {%- endif -%}
+    <footer>
+          Created by <a href="https://p135246.github.io/">{{ site.author }}</a>, hosted on <a   href="https://pages.github.com/">GitHub Pages</a>.
+    </footer>
+  </body>
+</html>

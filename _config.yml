@@ -1,0 +1,55 @@
+# Information
+# ===========
+title:              Pavel's homepage
+author:             Pavel Hájek
+description:        Personal website of Pavel Hájek
+url:                https://p135246.github.io
+email:              p135246@gmail.com
+github_username:    p135246
+# Build
+# ===========
+# Options used by jekyll to build the website (in ./_site)
+plugins:
+  - jekyll-sitemap # Creates the sitemap file ./sitemap.xml
+# It contains a list of content of the website
+# and is used by websearch engines for indexing.
+  - jemoji # Serves emojis from https://github.githubassets.com
+# To serve emojis locally use
+#   emoji:
+#      src: "/assets/images/emoji"
+  - jekyll-seo-tag
+# Include SEO tags in heads of htmls
+include: # Files to be included
+  - assets/
+exclude: # Files that will not be processed
+# Default:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+# ./_draft is excluded by default
+# User defined:
+  - LICENSE
+  - CHANGELOG
+  - README
+markdown:   kramdown # Markdown renderer (transforms md to html)
+# See https://kramdown.gettalong.org/
+# Github pages overrides any option by kramdown.
+kramdown:
+    input:      GFM # Markdown processor for Kramdown that is used by github pages
+    math_engine: mathjax #
+    # Processes <text>$$...$$<text> as inline and <nl>$$...$$<nl> as displayed math.
+    # Github pages overrides any option by mathjax (not possible to use katex or null).
+    # Mathjax 3 expects \(...\) for inline and \[...\] for displayed math directly in the
+    # html (no script tags anymore). Kramdown then transforms $$..$$ blocks as above to
+    # this format. Because of the default Github behaviour, it is not possible to use
+    # \(...\) and \[...\] directly.
+    # See https://11011110.github.io/blog/2019/10/17/mathjax-3-jekyll.html
+    highlighter: rouge # Code highlighter
+

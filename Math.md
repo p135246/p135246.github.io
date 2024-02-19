@@ -1,7 +1,7 @@
 ---
+permalink:  index.html
 layout:     category
-permalink:  /Math.html
-title:      Math
+nav-name:   math
 category:   Math
 ---
 # Math

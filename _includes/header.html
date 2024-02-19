@@ -1,0 +1,41 @@
+<nav>
+  <div class="horizontal-menu">
+      <ul>
+          <li><a href="/index.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
+          <li><a href="/IT.html" {% if page.nav-name == 'it' %}class='active'{% endif %}>IT</a></li>
+          <li><a href="/Misc.html" {% if page.nav-name == 'misc' %}class='active'{% endif %}>Misc</a></li>
+          <li><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
+          <li class="horizontal-menu-sep"><a href="/Contact.html" {% if page.nav-name == 'contact' %}class='active'{% endif %}>Contact</a></li>
+          <li><a href="/About.html" {% if page.nav-name == 'about' %}class='active'{% endif %}>About</a></li>
+      </ul>
+  </div>
+<div class="dropdown-menu">
+            <button onclick="toggleHorizontalMenu()" class="dropdown-menu-button">Menu</button>
+            <ul id="dropdown-menu-content" class="dropdown-menu-content">
+              <li><a href="/index.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
+              <li><a href="/IT.html" {% if page.nav-name == 'it' %}class='active'{% endif %}>IT</a></li>
+              <li><a href="/Misc.html" {% if page.nav-name == 'misc' %}class='active'{% endif %}>Misc</a></li>
+              <li><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
+              <li class="horizontal-menu-sep"><a href="/Contact.html" {% if page.nav-name == 'contact' %}class='active'{% endif %}>Contact</a></li>
+              <li><a href="/About.html" {% if page.nav-name == 'about' %}class='active'{% endif %}>About</a></li>
+            </ul>
+        </div>
+</nav>
+<script>
+function toggleHorizontalMenu() {
+  document.getElementById("dropdown-menu-content").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-menu-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-menu-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+

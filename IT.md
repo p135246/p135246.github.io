@@ -1,7 +1,6 @@
 ---
 layout:     category
-permalink:  /IT.html
-title:      IT
+nav-name:   it
 category:   IT
 ---
 # IT

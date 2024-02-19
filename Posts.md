@@ -1,7 +1,6 @@
 ---
-layout:     default
-permalink:  /Posts.html
-title:      POSTS
+layout:     page
+nav-name:   posts
 ---
 # Posts (All)
 

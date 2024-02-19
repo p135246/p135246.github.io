@@ -1,7 +1,6 @@
 ---
 layout:     category
-permalink:  /Misc.html
-title:      Misc
+nav-name:   misc
 category:   Misc
 ---
 

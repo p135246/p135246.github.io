@@ -1,7 +1,6 @@
 ---
-layout:     default
-title:      About
-permalink:  /index.html
+layout:     page
+nav-name:   about
 ---
 # About
 

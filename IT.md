@@ -9,7 +9,7 @@ I programmed in *Object Pascal* (*Delphi*) and played with 8-bit microchips a lo
 I have also been a *Linux* user since then.
 During my studies, I learned *Wolfram Mathematica* and it has become my favorite tool/language.
 After my PhD, I learned to touch type (see [TypeRacer][typeracer]) and became a committed *Vim* (*neovim*) user---that greatly increased my life satisfaction.
-I am naturally interested in languages like *Haskell*, but I have also tried *Java*, *Python*, and *C*.
+I am interested in languages like *Haskell*, but I have also tried *Java*, *C++*, and *Python*.
 
 ## Miscellaneous Projects
 

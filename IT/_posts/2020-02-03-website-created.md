@@ -1,6 +1,6 @@
 ---
 title:		"Website's technical changelog"
-categories: IT
+categories: Software
 mathjax: 	true
 utterances: true
 ---

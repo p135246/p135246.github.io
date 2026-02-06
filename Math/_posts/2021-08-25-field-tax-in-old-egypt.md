@@ -1,6 +1,6 @@
 ---
 title:      "Measuring land tax in old Egypt"
-categories: MATH
+categories: Math
 mathjax:    false
 utterances: true
 ---

@@ -1,6 +1,6 @@
 ---
 title:		"How to share iPad screen in BigBlueButton on Linux PC using Android phone"
-categories: IT
+categories: Software
 mathjax: 	false
 utterances: true
 ---

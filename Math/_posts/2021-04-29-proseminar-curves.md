@@ -1,6 +1,6 @@
 ---
 title:      "Proseminar on geometry of curves"
-categories: MATH
+categories: Math
 mathjax:    false
 utterances: true
 ---

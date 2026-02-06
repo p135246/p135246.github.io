@@ -1,23 +1,23 @@
 <nav>
   <div class="horizontal-menu">
       <ul>
-          <li><a href="/index.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
-          <li><a href="/IT.html" {% if page.nav-name == 'it' %}class='active'{% endif %}>IT</a></li>
-          <li><a href="/Misc.html" {% if page.nav-name == 'misc' %}class='active'{% endif %}>Misc</a></li>
-          <li><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
-          <li class="horizontal-menu-sep"><a href="/Contact.html" {% if page.nav-name == 'contact' %}class='active'{% endif %}>Contact</a></li>
-          <li><a href="/About.html" {% if page.nav-name == 'about' %}class='active'{% endif %}>About</a></li>
+          <li><a href="/index.html" {% if page.nav-name == 'home' %}class='active'{% endif %}>Home</a></li>
+          <li><a href="/Math.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
+          <li><a href="/Software.html" {% if page.nav-name == 'software' %}class='active'{% endif %}>Software</a></li>
+          <li><a href="/Wolfram.html" {% if page.nav-name == 'wolfram' %}class='active'{% endif %}>Wolfram</a></li>
+          <li><a href="/Hobbies.html" {% if page.nav-name == 'hobbies' %}class='active'{% endif %}>Hobbies</a></li>
+          <li class="horizontal-menu-sep"><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
       </ul>
   </div>
 <div class="dropdown-menu">
             <button onclick="toggleHorizontalMenu()" class="dropdown-menu-button">Menu</button>
             <ul id="dropdown-menu-content" class="dropdown-menu-content">
-              <li><a href="/index.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
-              <li><a href="/IT.html" {% if page.nav-name == 'it' %}class='active'{% endif %}>IT</a></li>
-              <li><a href="/Misc.html" {% if page.nav-name == 'misc' %}class='active'{% endif %}>Misc</a></li>
-              <li><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
-              <li class="horizontal-menu-sep"><a href="/Contact.html" {% if page.nav-name == 'contact' %}class='active'{% endif %}>Contact</a></li>
-              <li><a href="/About.html" {% if page.nav-name == 'about' %}class='active'{% endif %}>About</a></li>
+              <li><a href="/index.html" {% if page.nav-name == 'home' %}class='active'{% endif %}>Home</a></li>
+              <li><a href="/Math.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
+              <li><a href="/Software.html" {% if page.nav-name == 'software' %}class='active'{% endif %}>Software</a></li>
+              <li><a href="/Wolfram.html" {% if page.nav-name == 'wolfram' %}class='active'{% endif %}>Wolfram</a></li>
+              <li><a href="/Hobbies.html" {% if page.nav-name == 'hobbies' %}class='active'{% endif %}>Hobbies</a></li>
+              <li class="horizontal-menu-sep"><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
             </ul>
         </div>
 </nav>

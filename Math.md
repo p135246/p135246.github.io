@@ -1,5 +1,5 @@
 ---
-permalink:  index.html
+permalink:  Math.html
 layout:     category
 nav-name:   math
 category:   Math
@@ -32,7 +32,7 @@ I would like to do research in the following topics as well:
 * Classical and quantum integrability, quantization, semi-classical physics.
 * Spinning tops and other concrete Hamiltonian systems.
 
-## Miscellaneous Projects
+## Projects
 
 * [PhD thesis][PhD] and [slides][PhDDefence] from defence.
 * [Proseminar on geometry of curves][proseminar-on-curves].

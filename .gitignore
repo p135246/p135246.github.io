@@ -1,0 +1,15 @@
+# Jekyll build output
+_site/
+
+# Jekyll caches
+.jekyll-cache/
+.sass-cache/
+
+# Drafts (unpublished content)
+_drafts/
+
+# macOS
+.DS_Store
+
+# Local generated list
+tracked-files.txt

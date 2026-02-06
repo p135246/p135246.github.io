@@ -1,6 +1,6 @@
 ---
 title:      "Canonical IBL algebra on cyclic words in Wolfram Mathematica"
-categories: [MATH, IT]
+categories: [Math, Wolfram]
 mathjax:    true
 utterances: true
 ---

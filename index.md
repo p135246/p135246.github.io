@@ -14,20 +14,9 @@ Find more in the respective categories.
 * **[Software](Software.html)**
 * **[Wolfram](Wolfram.html)**
 * **[Hobbies](Hobbies.html)**
-
-From time to time I also drop a blog post.
-
 * **[Posts](Posts.html)**
 
-## Contact
-
-Please contact me via the contact form.
-
-{% include contact-form.html %}
-
-[PGP]:{{ site.url }}/assets/pgpkey.asc
-
-Here is my [PGP key][PGP].
+You can [contact me](#contact) or [support me](#support) below.
 
 ## Recent Posts
 
@@ -47,3 +36,17 @@ Here is my [PGP key][PGP].
       {%- endfor -%}
     </table>
 </div>
+
+## <a id="contact"></a>Contact
+
+Please contact me via the contact form or using my [PGP key][PGP].
+
+{% include contact-form.html %}
+
+[PGP]:{{ site.url }}/assets/pgpkey.asc
+
+## <a id="support"></a>Support
+
+<a href="https://buymeacoffee.com/pavel_hajek" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40">
+</a>

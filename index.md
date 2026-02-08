@@ -6,17 +6,18 @@ nav-name:   home
 
 # Pavel's Homepage
 
-Hi I'm Pavel Hájek from Prague, Czech Republic, and this is my personal website.
+Hi, I'm Pavel Hájek from Prague, Czech Republic, and this is my personal website.
 I studied mathematics and physics and have worked as a mathematician, software engineer, and computational researcher at the Wolfram Institute.
-Find more in the respective categories.
+Browse by the categories below or see all [Posts](Posts.html) at once.
 
 * **[Math](Math.html)**
 * **[Software](Software.html)**
 * **[Wolfram](Wolfram.html)**
 * **[Hobbies](Hobbies.html)**
-* **[Posts](Posts.html)**
 
 You can [contact me](#contact) or [support me](#support) below.
+
+Also check out my wife's [photography website](https://www.tunievaphotography.com).
 
 ## Recent Posts
 
@@ -39,7 +40,7 @@ You can [contact me](#contact) or [support me](#support) below.
 
 ## <a id="contact"></a>Contact
 
-Please contact me via the contact form or using my [PGP key][PGP].
+Please contact me via the contact form below, or use my [PGP key][PGP].
 
 {% include contact-form.html %}
 

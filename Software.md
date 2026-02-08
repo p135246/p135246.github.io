@@ -6,26 +6,24 @@ category:   Software
 ---
 # Software
 
-Before attending university, I programmed on PC in *[Object Pascal][object-pascal]* (*[Delphi][delphi]*) and on 8-bit *[Atmel][atmel]* microchips in *[assembler][avr-asm]* for fun.
-I switched to *[Linux][linux]* early on and have been a power user since then.
+I started programming long before university, first in *[Pascal][pascal]* and *[Object Pascal][object-pascal]* in *[Delphi][delphi]* on PC, and later in *[assembler][avr-asm]* on 8-bit *[Atmel AVR][atmel]* microcontrollers.
+I switched to *[Linux][linux]* early on, grew into a power user, and picked up some admin-level skills. After a few initial experiments, I stayed loyal to *[openSUSE][opensuse]*.
 
-During my studies, I learned *[Wolfram Mathematica][mathematica]*, which has become my favorite tool for computational tasks of any kind.
-I was also interested in languages like *[Haskell][haskell]* and *[Prolog][prolog]*.
+During my studies, I discovered *[Wolfram Mathematica][mathematica]*, which quickly became my favorite tool for computational work of any kind.
+Along the way, I also explored languages like *[Prolog][prolog]* and *[Haskell][haskell]*.
 
 During my first postdoc, I learned to touch type (see my [TypeRacer][typeracer]) and became a committed *[Neovim][neovim]* user, even contributing to some plugins in *[Lua][lua]*.
 
-After that, I worked as a software engineer on large-scale distributed systems, picking up full stack engineering (*[Go][go]*, *[PostgreSQL][postgresql]*/*[Oracle][oracle]*, *[React][react]*) and a bit of DevOps (*[Kubernetes][kubernetes]*, *[Datadog][datadog]*, *[Nix][nix]*, *[Azure][azure]*).
-I wrote all the production code in *Neovim*, had a keyboard-centric system running all tools in the CLI, and organized myself using *[vimwiki][vimwiki]*.
+After that, I worked as a software engineer on large-scale distributed systems for a while, picking up full stack engineering (*[Go][go]*, *[PostgreSQL][postgresql]*/*[Oracle][oracle]*, *[React][react]*) and some DevOps tooling (*[Kubernetes][kubernetes]*, *[Datadog][datadog]*, *[Nix][nix]*, *[Azure][azure]*).
+I wrote all production code in *Neovim*—without exception—ran a keyboard-centric CLI workflow, and organized everything through *[vimwiki][vimwiki]*.
 
-I then moved into research software engineering at the *[Wolfram Institute][wolfram-institute]* where I decided to drop my customized environment and go with *Apple* products and *macOS* with the default settings.
-It was hard to drop the nerdy identity but eventually a big relief, as I gained freedom and more time to research and explore without thinking of a workflow.
+When I moved into research software engineering at the *[Wolfram Institute][wolfram-institute]*, I made a deliberate choice to drop my customized environment and adopt *Apple* products and *macOS* with their default settings.
+Letting go of the nerdy identity was surprisingly difficult, but ultimately a relief.
+I gained more time and mental space to research and explore what matters without thinking about workflows or sharpening tools.
 
-I still use *Neovim* for concentrated *[LaTeX][latex]* writing (*[VimTeX][vimtex]* is unbeatable) and for quick edits (often with the AI plugin *[CodeCompanion][codecompanion]*), but otherwise I center my work around *[VS Code][vscode]* with *[GitHub Copilot][github-copilot]* and *[Claude Code][claude-code]*, and *[Wolfram Notebooks][wolfram-notebooks]*.
+I still use *Neovim* for focused *[LaTeX][latex]* writing (*[VimTeX][vimtex]* remains unmatched) and for quick edits (often with the *[CodeCompanion][codecompanion]* AI plugin), but my main workflow now centers on *[VS Code][vscode]* with *[GitHub Copilot][github-copilot]* and *[Claude Code][claude-code]*. Another great tool is *[Wolfram Notebooks][wolfram-notebooks]*, which are especially powerful for multimodal research and explorations. For organizational tasks I now use *[start.me][startme]* and the default Apple tools, which allowed me to depart from *vimwiki* completely.
 
-The notebooks are especially great for multimodal research.
-Another great tool that complements notebooks for organizational tasks is *[start.me][startme]*, allowing me to depart from *vimwiki* completely.
-
-That said, if I ever went back to production software engineering, I would happily return to the *Neovim* + *vimwiki* + CLI setup.
+That said, if I ever returned to production software engineering, I would happily go back to the *Neovim* + *vimwiki* + CLI setup.
 
 ## Projects
 
@@ -39,11 +37,10 @@ That said, if I ever went back to production software engineering, I would happi
 * [I.Ryant, Algoritmy a datové struktury objektově][ADSO]
 * [Wolfram Events][WolframEvents], [Stephen Wolfram's blog][WolframBlog]
 * [CCC Mediathek][CCC] 
-* [openSUSE Build Service][OBS]
 
 [canonical-ibl-algebra]:https://github.com/p135246/canonical-ibl-algebra
 [photo-processor]:https://github.com/p135246/photo-processor
-[OBS]:https://build.openbuildservice.org/project/show/home:135246
+[opensuse]:https://www.opensuse.org/
 [typeracer]:https://data.typeracer.com/pit/profile?user=p135246
 [quickfilter-kbd]:https://addons.thunderbird.net/de/thunderbird/addon/quickfilter-kbd/
 [cr3bp-explorer]:https://github.com/p135246/cr3bp-explorer
@@ -69,9 +66,10 @@ That said, if I ever went back to production software engineering, I would happi
 [vscode]:https://code.visualstudio.com/
 [wolfram-institute]:https://wolframinstitute.org/
 [wolfram-notebooks]:https://www.wolfram.com/notebooks/
+[pascal]:https://en.wikipedia.org/wiki/Turbo_Pascal
 [object-pascal]:https://en.wikipedia.org/wiki/Object_Pascal
 [delphi]:https://en.wikipedia.org/wiki/Delphi_(software)
-[atmel]:https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus
+[atmel]:https://en.wikipedia.org/wiki/AVR_microcontrollers
 [avr-asm]:https://en.wikipedia.org/wiki/Atmel_AVR_instruction_set
 [linux]:https://www.kernel.org/
 [mathematica]:https://www.wolfram.com/mathematica/

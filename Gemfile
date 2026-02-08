@@ -26,7 +26,7 @@
 source "https://rubygems.org"
 # === GITHUB GEMS ===
 # gem "jekyll", "~> 3.9.5"
-gem "github-pages","~> 231", group: :jekyll_plugins
+gem "github-pages","~> 232", group: :jekyll_plugins
 # Update github-pages often!:
 #   bundle update github-pages
 # Supported plugins and versions:

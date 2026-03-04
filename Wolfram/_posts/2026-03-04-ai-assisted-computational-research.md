@@ -47,7 +47,7 @@ The core MCP servers are [Wolfram MCP][wolfram-mcp], or the unofficial [wolfram-
 
 - **Central database to store both verified and incomplete math.** Something like [Lean][lean] but tolerant of partially defined objects to lower the threshold for using it. This should remove the necessity to write math papers. A researcher just inputs new results and a reader will generate a paper that is suitable for him to study using his AI.
 - **Agent definition.** What is an agent? Is there an agent that creates agents? Can I reuse it in different contexts?
-- **Orchestration graph.** A workflow graph including agents, exact tools, and humans. It should be possible to compile it into a minimal version where most tasks are performed by tools.
+- **Orchestration graph.** A workflow graph including agents, exact tools, and humans. It should be possible to compile it into a minimal version where most tasks are performed by tools (perhaps some improved version of [this][llmgraph]).
 
 ## Human role
 
@@ -71,3 +71,4 @@ It is clear that AI will make certain hard skills obsolete. Paradigm changes are
 [wolfram-mcp-fork]: https://github.com/p135246/wolfram-mcp
 [arxiv-mcp]: https://github.com/blazickjp/arxiv-mcp-server
 [lean]: https://lean-lang.org/
+[llmgraph]: https://reference.wolfram.com/language/ref/LLMGraph.html

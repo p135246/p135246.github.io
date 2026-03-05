@@ -21,7 +21,7 @@ Coding prototypes to get from A to B fast without having to dig deep and with sa
 
 ## Computational research plugin
 
-The [plugin][comp-research], which is a work in progress, should bundle several **Claude skills** and tools useful in computational research. Currently I have the **wolfram-notebook** skill, which creates a Wolfram notebook from a prompt via import from Markdown without touching the front end (an idea of [sw1sh](https://github.com/sw1sh)), and the **computational-research** skill, which scaffolds a research project and performs an initial exploration:
+The [plugin][comp-research], which is a work in progress, should bundle several **Claude skills** and tools useful in computational research. Currently I have the **wolfram-notebook** skill, which creates a Wolfram notebook from a prompt via import from Markdown without touching the front end (an idea of [sw1sh](https://github.com/sw1sh)), and the **computational-exploration** skill, which scaffolds a research project and performs an initial exploration:
 
 ```
 Infrageometry/
@@ -31,8 +31,8 @@ Infrageometry/
 │   ├── Tools.wl
 │   ├── Infrageometry.wl
 │   └── InfrageometryVisualization.wl
-├── Papers1.nb
-├── Papers/
+├── Resources1.nb
+├── Resources/
 └── Article/
     ├── article1.tex
     ├── notes1.tex
@@ -42,6 +42,8 @@ Infrageometry/
 The skill searches [arXiv][arxiv] and [Wolfram Community][wolfram-community] for relevant papers and resources, downloads them, writes summaries, and writes organized notes with citations about topics and ideas I specify. Since I always want to write the final article myself, the notes serve as well-formatted extended memory suitable for both me and Claude, where I can just dump ideas and resources and Claude takes care of the rest.
 
 The core [MCP][mcp] servers are [Wolfram MCP][wolfram-mcp], or the unofficial [wolfram-mcp][wolfram-mcp-sw1sh] (with [LSP][lsp] support) to evaluate WL code and create notebooks, and [arXiv-mcp][arxiv-mcp] to search and download arXiv papers.
+
+I plan additional skills such as **notes-to-article**, which moves a given part of notes to the article at a specified place and seamlessly integrates it, **list-topics**, which lists research topics from resources and notes, **setup-experiment**, which sets up a computational experiment notebook on a given topic, and **polish-research**, which refines and improves research artifacts.
 
 ## Missing pieces
 

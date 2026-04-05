@@ -27,23 +27,7 @@ Given this shift, I think it is time to consider **agentic workflows** and **res
 
 ### Version 1 (2026-03-04)
 
-The first version of the [plugin][comp-research] bundled a few Claude skills: **wolfram-notebook** for creating Wolfram notebooks from prompts via Markdown import (an idea by [sw1sh][sw1sh]), and **computational-exploration** for scaffolding a research project. It generated a flat structure:
-
-```
-Infrageometry/
-├── CLAUDE.md
-├── Infrageometry1.nb
-├── Code/
-│   ├── Tools.wl
-│   ├── Infrageometry.wl
-│   └── InfrageometryVisualization.wl
-├── Resources1.nb
-├── Resources/
-└── Article/
-    ├── article1.tex
-    ├── notes1.tex
-    └── references.bib
-```
+The first version of the [plugin][comp-research] bundled a few Claude skills: **wolfram-notebook** for creating Wolfram notebooks from prompts via Markdown import (an idea by [sw1sh][sw1sh]), and **computational-exploration** for scaffolding a structured research project.
 
 The skill searched [arXiv][arxiv] and [Wolfram Community][wolfram-community] for papers, downloaded them, and produced organized notes with citations. Planned skills included notes-to-article, list-topics, setup-experiment, and polish-research.
 

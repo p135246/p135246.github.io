@@ -27,7 +27,7 @@ Given this shift, I think it is time to consider **agentic workflows** and **res
 
 ### Version 1 (2026-03-04)
 
-The first version of the [plugin][comp-research] bundled a few Claude skills: **wolfram-notebook** for creating Wolfram notebooks from prompts via Markdown import (an idea by [sw1sh](https://github.com/sw1sh)), and **computational-exploration** for scaffolding a research project. It generated a flat structure:
+The first version of the [plugin][comp-research] bundled a few Claude skills: **wolfram-notebook** for creating Wolfram notebooks from prompts via Markdown import (an idea by [sw1sh][sw1sh]), and **computational-exploration** for scaffolding a research project. It generated a flat structure:
 
 ```
 Infrageometry/
@@ -47,18 +47,20 @@ Infrageometry/
 
 The skill searched [arXiv][arxiv] and [Wolfram Community][wolfram-community] for papers, downloaded them, and produced organized notes with citations. Planned skills included notes-to-article, list-topics, setup-experiment, and polish-research.
 
-After using this on several projects, I found the design **too broad and not goal-oriented enough**. Skills mixed concerns—exploration, resource management, and knowledge organization were tangled together. There was no persistent knowledge layer: context lived in notebooks and CLAUDE.md, making it hard for the LLM to navigate a growing project. Resources had no recovery mechanism, so a fresh clone lost all downloaded papers. And there was no revision protocol—the LLM could silently overwrite user-edited content.
+After using this on several projects, I found the design **too broad and not goal-oriented enough**. Exploration, resource management, and knowledge organization were tangled together. Knowledge was spread across `CLAUDE.md`, notebooks, LaTeX notes, and resources. Generated notebooks were redundant to store, as they can be imported from Markdown anyway. Resources had no recovery mechanism, so a fresh clone lost all downloaded papers. And there was no revision protocol, so the LLM could overwrite user-edited content.
 
 ### Version 2 (2026-04-05)
 
-The [rebuilt plugin (v2.0.0)][comp-research] introduces a **plain-markdown wiki** as the central knowledge layer. `Wiki/Index.md` is the entry point; the LLM navigates cross-references to understand the project without scanning every file. Each concern—wiki maintenance, resource management, planning, revision, notebook creation—has its own skill, and a top-level **computational-exploration** skill scaffolds a new project using all of them.
+The [rebuilt plugin (v2.0.0)][comp-research] introduces a **plain-markdown wiki** as the central knowledge base. The LLM navigates cross-references to understand the project and workflows without scanning every file. Wiki maintenance, resource management, planning, revision, and notebook creation now correspond to separate LLM skills, while a top-level **computational-exploration** skill scaffolds a new project using all of them.
 
-The main ideas behind the redesign:
+The main new points are:
 
-- **Plain markdown only.** No databases, no embeddings. The wiki works on GitHub, in Obsidian, or any text editor.
-- **Resources are recoverable.** Wiki articles summarize each resource and include download URLs. The actual files are gitignored. A recovery script rebuilds everything from the wiki, so a fresh clone loses nothing.
-- **Revision for code, not prose.** Code and plans go through a human review loop. Wiki articles are maintained automatically by the LLM.
-- **Domain-agnostic.** The folder names and wiki structure adapt to the project.
+- **Plain markdown only.** It is universally readable for both LLMs and humans, and naturally clickable in standard wiki workflows.
+- **Repo structure.** It should be version-controlled and collaboration-ready.
+- **Summarized and recoverable resources.** Resources are summarized as Markdown files, together with instructions for local recovery.
+- **Recoverable notebooks as Markdown files** (idea by [sw1sh][sw1sh]). Data that can be represented in Markdown should stay in Markdown and be built on demand.
+- **Human revision.** The LLM should track human revisions and guide the user through them.
+- **Project tour.** The LLM should guide the user through the project from the simplest parts to the most advanced, suggesting code and ideas to explore.
 
 The core [MCP][mcp] servers remain [Wolfram MCP][wolfram-mcp] (or the unofficial [wolfram-mcp][wolfram-mcp-sw1sh] with [LSP][lsp] support) and [arXiv-mcp][arxiv-mcp] (plus [arxiv-latex-mcp][arxiv-latex-mcp] for reading LaTeX source).
 
@@ -84,6 +86,7 @@ A few ideas for missing pieces:
 [neovim]: https://neovim.io/
 [opus]: https://www.anthropic.com/news/claude-opus-4-5
 [comp-research]: https://github.com/WolframInstitute/ClaudePluginComputationalResearch
+[sw1sh]: https://github.com/sw1sh
 [arxiv]: https://arxiv.org/
 [wolfram-community]: https://community.wolfram.com/
 [wolfram-mcp]: https://www.wolfram.com/artificial-intelligence/foundation-tool/

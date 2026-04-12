@@ -5,7 +5,7 @@ mathjax:    false
 utterances: true
 ---
 
-*This post is a living document. Last updated on 2026-04-05.*
+*This post is a living document. Last updated on 2026-04-12.*
 
 # Computational research and AI
 
@@ -25,13 +25,36 @@ Given this shift, I think it is time to consider **agentic workflows** and **res
 
 ## Computational research plugin
 
-### Version 1 (2026-03-04)
+The [plugin][comp-research] ([GitHub][comp-research]) is installed from the [WolframInstitute marketplace][marketplace]. See the [version history](#version-history) below for a detailed changelog after each major release.
 
-The first version of the [plugin][comp-research] bundled a few Claude skills: **wolfram-notebook** for creating Wolfram notebooks from prompts via Markdown import (an idea by [sw1sh][sw1sh]), and **computational-exploration** for scaffolding a structured research project.
+## Some philosophy and future direction
 
-The skill searched [arXiv][arxiv] and [Wolfram Community][wolfram-community] for papers, downloaded them, and produced organized notes with citations. Planned skills included notes-to-article, list-topics, setup-experiment, and polish-research.
+AI will surely make certain hard skills obsolete. Paradigm shifts are exciting, and letting things go and starting anew deepens life experience. But several human roles remain essential:
 
-After using this on several projects, I found the design **too broad and not goal-oriented enough**. Exploration, resource management, and knowledge organization were tangled together. Knowledge was spread across `CLAUDE.md`, notebooks, LaTeX notes, and resources. Generated notebooks were redundant to store, as they can be imported from Markdown anyway. Resources had no recovery mechanism, so a fresh clone lost all downloaded papers. And there was no revision protocol, so the LLM could overwrite user-edited content.
+- **Curiosity** — the drive to explore a direction and push it as far as possible through questions and tasks.
+- **Ideas** — identifying an AI-unsolvable problem that matters to your group of humans and challenging yourself to solve it.
+- **Coordination** — defining the workflow for agents and deciding when humans intervene.
+- **Communication** — spreading enthusiasm among humans about your problem and convincing them it is worth their time and resources.
+
+A few ideas for missing pieces:
+
+- **Central database for both verified and human math.** It could be some database involving formalizations in [Lean][lean] and a collection of human proofs. A future mathematician could input a new result in any form—even blackboard photos—and the AI would place it correctly and add it to a queue for revision and formalization. Readers could search through with the help of LLMs and generate a study-ready paper tailored to their needs. This would remove the need to stitch together dry math papers and allow researchers to focus on novel contributions. Perhaps [Lean][lean] and [Mathlib][mathlib], which I have to get more familiar with, already go in the correct direction. As we are demonstrating in our next project [UniversalityDB](https://github.com/WolframInstitute/UniversalityDB), LLMs when equipped with a knowledge base, computational engine, and human guidelines, can help with auto-formalizations in Lean and lower the threshold for using it.
+- **A clear definition of an agent.** What exactly is an agent? Can an agent create other agents? Can such agents be reused across contexts?
+- **An orchestration graph.** A workflow graph including agents, tools, and humans, ideally compilable into a minimal version where most tasks are performed by tools—a more capable successor to [LLMGraph][llmgraph].
+
+## Version history
+
+### Version 3 (2026-04-12)
+
+[Version 3.0.0][comp-research] expands the plugin from a wiki-centric research tool into a full project lifecycle manager. The main additions:
+
+- **Project type selection.** The scaffolding skill (`project-init`, renamed from `computational-exploration`) now asks what kind of project to create: a **research** project (the v2 default), a **paclet-dev** repo (WolframInstitute-style with triple-nested submodules), or a standalone **paclet**.
+- **Wolfram paclet development.** New skills for building (`.paclet` archive + local install) and publishing paclets to [Wolfram Cloud][wolfram-cloud] with a public install URL. Templates for `PacletInfo.wl`, kernel loaders with `Package[]`/`PackageExport`, test runners, and `.gitmodules`.
+- **LaTeX paper scaffolding.** A `paper-init` skill creates `Paper/` with an [amsart][amsart] article, [biblatex][biblatex]+biber bibliography, and a shared `macros.sty` preamble (Palatino via newpx, mathtools, tikz-cd, cleveref, theorem environments).
+- **Wolfram ecosystem search.** A `wolfram-resources` skill with scraper scripts that search [Wolfram Documentation][wolfram-docs], [Function Repository][function-repo], [Community][wolfram-community], [Stephen Wolfram's writings][wolfram-writings], and the [Wolfram Physics Project][WP] site (glossary, archives, technical documents, tools).
+- **Full slash-command coverage.** Every skill now has a corresponding `/computational-research:` command (14 total, up from 4).
+
+The plugin now has 13 skills, 15 scripts, and 14 commands. It is installed from the [WolframInstitute plugin marketplace][marketplace].
 
 ### Version 2 (2026-04-05)
 
@@ -48,20 +71,13 @@ The main new points are:
 
 The core [MCP][mcp] servers remain [Wolfram MCP][wolfram-mcp] (or the unofficial [wolfram-mcp][wolfram-mcp-sw1sh] with [LSP][lsp] support) and [arXiv-mcp][arxiv-mcp] (plus [arxiv-latex-mcp][arxiv-latex-mcp] for reading LaTeX source).
 
-## Some philosophy and future direction
+### Version 1 (2026-03-04)
 
-AI will surely make certain hard skills obsolete. Paradigm shifts are exciting, and letting things go and starting anew deepens life experience. But several human roles remain essential:
+The first version of the [plugin][comp-research] bundled a few Claude skills: **wolfram-notebook** for creating Wolfram notebooks from prompts via Markdown import (an idea by [sw1sh][sw1sh]), and **computational-exploration** for scaffolding a structured research project.
 
-- **Curiosity** — the drive to explore a direction and push it as far as possible through questions and tasks.
-- **Ideas** — identifying an AI-unsolvable problem that matters to your group of humans and challenging yourself to solve it.
-- **Coordination** — defining the workflow for agents and deciding when humans intervene.
-- **Communication** — spreading enthusiasm among humans about your problem and convincing them it is worth their time and resources.
+The skill searched [arXiv][arxiv] and [Wolfram Community][wolfram-community] for papers, downloaded them, and produced organized notes with citations. Planned skills included notes-to-article, list-topics, setup-experiment, and polish-research.
 
-A few ideas for missing pieces:
-
-- **Central database for both verified and human math.** It could be some database involving formalizations in [Lean][lean] and a collection of human proofs. A future mathematician could input a new result in any form—even blackboard photos—and the AI would place it correctly and add it to a queue for revision and formalization. Readers could search through with the help of LLMs and generate a study-ready paper tailored to their needs. This would remove the need to stitch together dry math papers and allow researchers to focus on novel contributions. Perhaps [Lean][lean] and [Mathlib][mathlib], which I have to get more familiar with, already go in the correct direction. As we are demonstrating in our next project [UniversalityDB](https://github.com/WolframInstitute/UniversalityDB), LLMs when equipped with a knowledge base, computational engine, and human guidelines, can help with auto-formalizations in Lean and lower the threshold for using it.
-- **A clear definition of an agent.** What exactly is an agent? Can an agent create other agents? Can such agents be reused across contexts?
-- **An orchestration graph.** A workflow graph including agents, tools, and humans, ideally compilable into a minimal version where most tasks are performed by tools—a more capable successor to [LLMGraph][llmgraph].
+After using this on several projects, I found the design **too broad and not goal-oriented enough**. Exploration, resource management, and knowledge organization were tangled together. Knowledge was spread across `CLAUDE.md`, notebooks, LaTeX notes, and resources. Generated notebooks were redundant to store, as they can be imported from Markdown anyway. Resources had no recovery mechanism, so a fresh clone lost all downloaded papers. And there was no revision protocol, so the LLM could overwrite user-edited content.
 
 [WI]: https://wolframinstitute.org/
 [WP]: https://www.wolframphysics.org/
@@ -86,3 +102,10 @@ A few ideas for missing pieces:
 [swift]: https://www.swift.org/
 [mathlib]: https://leanprover-community.github.io/
 [claude]: https://claude.ai/
+[marketplace]: https://github.com/WolframInstitute/ClaudePluginMarketplace
+[wolfram-cloud]: https://www.wolframcloud.com/
+[wolfram-docs]: https://reference.wolfram.com/language/
+[function-repo]: https://resources.wolframcloud.com/FunctionRepository/
+[wolfram-writings]: https://writings.stephenwolfram.com/
+[amsart]: https://ctan.org/pkg/amsart
+[biblatex]: https://ctan.org/pkg/biblatex

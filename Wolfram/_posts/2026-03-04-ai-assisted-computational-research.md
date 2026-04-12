@@ -25,7 +25,16 @@ Given this shift, I think it is time to consider **agentic workflows** and **res
 
 ## Computational research plugin
 
-The [plugin][comp-research] ([GitHub][comp-research]) is installed from the [WolframInstitute marketplace][marketplace]. See the LLM-updated [version history](#version-history) below for a changelog after each major release.
+The [plugin][comp-research] ([GitHub][comp-research]) is installed from the [WolframInstitute marketplace][marketplace]. Core principles:
+
+- **Computational engine.** Link to the Wolfram kernel for validation and Wolfram functions.
+- **Knowledge base.** A plain-markdown wiki readable by both humans and LLMs.
+- **Resource management.** Resources stored as Markdown with recovery instructions, regenerated on demand.
+- **Repo organization.** Scaffolding for research projects, paclet repos, and LaTeX papers.
+- **Tour.** Guide the user from the simplest parts to the most advanced, with revision at each step.
+- **Formal verification.** (TBD) Creation of Lean projects for validating results.
+
+See the LLM-updated [version history](#version-history) below for a changelog after each major release.
 
 ## Some philosophy and future direction
 

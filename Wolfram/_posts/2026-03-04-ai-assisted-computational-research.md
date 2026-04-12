@@ -25,7 +25,7 @@ Given this shift, I think it is time to consider **agentic workflows** and **res
 
 ## Computational research plugin
 
-The [plugin][comp-research] ([GitHub][comp-research]) is installed from the [WolframInstitute marketplace][marketplace]. See the [version history](#version-history) below for a detailed changelog after each major release.
+The [plugin][comp-research] ([GitHub][comp-research]) is installed from the [WolframInstitute marketplace][marketplace]. See the LLM-updated [version history](#version-history) below for a changelog after each major release.
 
 ## Some philosophy and future direction
 
@@ -42,32 +42,15 @@ A few ideas for missing pieces:
 - **A clear definition of an agent.** What exactly is an agent? Can an agent create other agents? Can such agents be reused across contexts?
 - **An orchestration graph.** A workflow graph including agents, tools, and humans, ideally compilable into a minimal version where most tasks are performed by tools—a more capable successor to [LLMGraph][llmgraph].
 
-## Version history
+## Version history (LLM updated)
 
 ### Version 3 (2026-04-12)
 
-[Version 3.0.0][comp-research] expands the plugin from a wiki-centric research tool into a full project lifecycle manager. The main additions:
-
-- **Project type selection.** The scaffolding skill (`project-init`, renamed from `computational-exploration`) now asks what kind of project to create: a **research** project (the v2 default), a **paclet-dev** repo (WolframInstitute-style with triple-nested submodules), or a standalone **paclet**.
-- **Wolfram paclet development.** New skills for building (`.paclet` archive + local install) and publishing paclets to [Wolfram Cloud][wolfram-cloud] with a public install URL. Templates for `PacletInfo.wl`, kernel loaders with `Package[]`/`PackageExport`, test runners, and `.gitmodules`.
-- **LaTeX paper scaffolding.** A `paper-init` skill creates `Paper/` with an [amsart][amsart] article, [biblatex][biblatex]+biber bibliography, and a shared `macros.sty` preamble (Palatino via newpx, mathtools, tikz-cd, cleveref, theorem environments).
-- **Wolfram ecosystem search.** A `wolfram-resources` skill with scraper scripts that search [Wolfram Documentation][wolfram-docs], [Function Repository][function-repo], [Community][wolfram-community], [Stephen Wolfram's writings][wolfram-writings], and the [Wolfram Physics Project][WP] site (glossary, archives, technical documents, tools).
-- **Full slash-command coverage.** Every skill now has a corresponding `/computational-research:` command (14 total, up from 4).
-
-The plugin now has 13 skills, 15 scripts, and 14 commands. It is installed from the [WolframInstitute plugin marketplace][marketplace].
+[Version 3.0.0][comp-research] expands the plugin from a wiki-centric research tool into a full project lifecycle manager: scaffolding for research projects, paclet repos, and standalone paclets; skills for building and publishing paclets to [Wolfram Cloud][wolfram-cloud]; LaTeX paper scaffolding with [amsart][amsart] and [biblatex][biblatex]; and search across the [Wolfram ecosystem][wolfram-docs] (documentation, [Function Repository][function-repo], [Community][wolfram-community], [writings][wolfram-writings], [Physics Project][WP]).
 
 ### Version 2 (2026-04-05)
 
-The [rebuilt plugin (v2.0.0)][comp-research] introduces a **plain-markdown wiki** as the central knowledge base. The LLM navigates cross-references to understand the project and workflows without scanning every file. Wiki maintenance, resource management, planning, revision, and notebook creation now correspond to separate LLM skills, while a top-level **computational-exploration** skill scaffolds a new project using all of them.
-
-The main new points are:
-
-- **Plain markdown only.** It is universally readable for both LLMs and humans, and naturally clickable in standard wiki workflows.
-- **Repo structure.** It should be version-controlled and collaboration-ready.
-- **Summarized and recoverable resources.** Resources are summarized as Markdown files, together with instructions for local recovery.
-- **Recoverable notebooks as Markdown files** (idea by [sw1sh][sw1sh]). Data that can be represented in Markdown should stay in Markdown and be built on demand.
-- **Human revision.** The LLM should track human revisions and guide the user through them.
-- **Project tour.** The LLM should guide the user through the project from the simplest parts to the most advanced, suggesting code and ideas to explore.
+[Version 2.0.0][comp-research] introduces a **plain-markdown wiki** as the central knowledge base — readable by both LLMs and humans, version-controlled, with cross-references the LLM navigates instead of scanning every file. Resources and notebooks are stored as Markdown with recovery instructions, built on demand (idea by [sw1sh][sw1sh]). A revision protocol prevents the LLM from overwriting human-edited content. A tour skill walks through the project from simple to advanced.
 
 The core [MCP][mcp] servers remain [Wolfram MCP][wolfram-mcp] (or the unofficial [wolfram-mcp][wolfram-mcp-sw1sh] with [LSP][lsp] support) and [arXiv-mcp][arxiv-mcp] (plus [arxiv-latex-mcp][arxiv-latex-mcp] for reading LaTeX source).
 

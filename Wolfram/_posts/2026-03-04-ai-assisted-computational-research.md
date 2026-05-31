@@ -5,7 +5,7 @@ mathjax:    false
 utterances: true
 ---
 
-*This post is a living document. Last updated on 2026-05-29.*
+*This post is a living document. Last updated on 2026-05-31.*
 
 # Computational research and AI
 
@@ -72,6 +72,10 @@ Along the way I have crystallized some ideas for future workflow improvements:
 
 *[LLM generated]*
 
+### Version 3.8 (2026-05-31)
+
+[Version 3.8.0][comp-research] makes Wolfram execution **MCP-first**: work runs in one persistent [Wolfram MCP][wolfram-mcp] kernel rather than spawning a new kernel per call, so the plugin stays within the license's kernel budget. Standalone scripts become a fallback for when no kernel is shared.
+
 ### Version 3.2 (2026-05-29)
 
 [Version 3.2.0][comp-research] adds a more focused work-tracking workflow, with one place for specifications, task checklists, and session progress, together with a lighter planning process to limit context rot. Planning also moves out of the wiki and into a workflow better suited to version control.
@@ -126,4 +130,3 @@ After using this on several projects, I found the design too broad and not goal-
 [wolfram-writings]: https://writings.stephenwolfram.com/
 [amsart]: https://ctan.org/pkg/amsart
 [biblatex]: https://ctan.org/pkg/biblatex
-[wolfram-mcp-quickstart]: https://reference.wolfram.com/language/guide/QuickStartForAICodingApplications.html

@@ -41,6 +41,7 @@ I am currently developing the following repositories:
 
 - [Infrageometry](https://github.com/WolframInstitute/Infrageometry)
 - [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry)
+- [InfraElements](https://github.com/WolframInstitute/InfraElements)
 - [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory) (to be published soon)
 - [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis) (to be published soon)
 - [InfraCausality](https://github.com/WolframInstitute/InfraCausality) (to be published soon)

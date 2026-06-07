@@ -1,5 +1,5 @@
 ---
-title:      "What Is Infrageometry?"
+title:      "Infrageometry Manifesto"
 categories: [Wolfram]
 mathjax:    false
 utterances: true
@@ -8,7 +8,7 @@ utterances: true
 *This text is a living document.
 Last updated on 2026-06-06.*
 
-# What Is Infrageometry?
+# Infrageometry Manifesto
 
 Infrageometry is not just ordinary discrete geometry.
 It is a foundational theory of geometry on graphs and hypergraphs, in which ordinary geometry - be it Euclid's geometry, algebraic geometry, or differential geometry - emerges as an effective description on sufficiently large graphs and at sufficiently large scales.
@@ -44,9 +44,9 @@ I am currently developing the following repositories:
 
 - [Infrageometry](https://github.com/WolframInstitute/Infrageometry)
 - [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry)
-- [InfraGaugeTheory]
-- [InfraAnalysis]
-- [InfraCausality]
+- [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory)
+- [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis)
+- [InfraCausality](https://github.com/WolframInstitute/InfraCausality)
 
 This is joint work with S. Wolfram, who has laid out the main philosophical directions, and with others on the Wolfram Institute team.
 

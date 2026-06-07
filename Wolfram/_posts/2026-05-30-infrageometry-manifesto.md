@@ -17,7 +17,7 @@ Notions such as dimension, gauge degrees of freedom, observer independence, and 
 We do not primarily try to find a suitable graph that represents a given smooth manifold and then study to what extent it determines that manifold.
 Methods of that approach would include, for example, embedding trivalent graphs into a Riemannian manifold with sufficiently short edges, all of the same length, distributed proportionally to the volume; constructing approximate unit-length embeddings of graphs in Euclidean spaces; manifold learning; and deriving bounds on coarse manifold invariants in terms of discrete invariants.
 Instead, we ask what geometric theories a computationally bounded observer, with possibly limited capacity, would build about the discrete substrate it observes, which geometric notions make sense, and which properties they satisfy.
-From this perspective, ordinary geometry can be seen as an idealization of macro-experience by macro-observers.
+From this perspective, ordinary geometry can be seen as an idealization of macro-experience by macro-observers, and infrageometry as a renormalizable proto-geometry in Wolfram's computational universe.
 
 Our theory is computable at every level, so we build the framework of infrageometry primarily as code.
 We put significant effort into designing a language for convenient infrageometric constructions, along with naturally parametrized generalizations, which are often discovered through implementations.

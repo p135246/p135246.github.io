@@ -23,7 +23,7 @@ Our theory is computable at every level, so we build the framework of infrageome
 We put significant effort into designing a language for convenient infrageometric constructions; it often leads to discovery of naturally parametrized generalizations.
 Due to this computability, we can utilize computers and AI to run computational experiments and explorations.
 We use robust aggregated observables, detect and classify features, enumerate all cases, and keep track of all branching and do statistics over it.
-This is in contrast with ordinary geometry, where uniqueness, well-definedness, and top-down structure are a primary goal, as the people who laid the foundations hundreds of years ago could only do pen-and-paper computations and abstract arguments, so they could handle only objects carved by very specific, but brittle, assumptions.
+This is in contrast with ordinary geometry, where uniqueness, well-definedness, and top-down structure are a primary goal, as the people who laid the foundations hundreds of years ago could only do pen-and-paper computations and abstract arguments, so they could handle only objects carved by very specific, but often brittle, assumptions.
 
 *Note:* Already the real numbers are uncomputable and cannot be stored in finite memory.
 

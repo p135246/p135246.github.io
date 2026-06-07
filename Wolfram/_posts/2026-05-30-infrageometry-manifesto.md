@@ -15,7 +15,7 @@ It is a foundational theory of geometry on graphs and hypergraphs, in which ordi
 In the context of the [Wolfram Physics Project][WP], this emergence also depends on the class of observers along certain classes of rewriting paths.
 Notions such as dimension, gauge degrees of freedom, observer independence, and relativity should arise within infrageometry as emergent phenomena, rather than being assumed from the start as in ordinary geometry.
 
-Note that a graph is nothing more than a metric space with an integer-valued geodesic metric, and a hypergraph is just a graph together with a cochain on its unit Rips-Vietoris complex that is supported on cliques corresponding to hyperedges.
+*Note:* A graph is nothing more than a metric space with an integer-valued geodesic metric, and a hypergraph is just a graph together with a cochain on its unit Rips-Vietoris complex that is supported on cliques corresponding to hyperedges.
 
 We do not primarily try to find a suitable graph that represents a given smooth manifold and then study to what extent it determines that manifold.
 Methods of that approach would include, for example, embedding trivalent graphs with sufficiently short edges, all of the same length, and vertex density corresponding to volume; constructing approximate unit-length embeddings of graphs in Euclidean spaces; manifold learning; and computing invariants of Riemannian manifolds under coarse equivalence.
@@ -28,7 +28,7 @@ Due to this computability, we can utilize computers and AI to run computational 
 We use robust aggregated observables, detect features and classify, enumerate all cases, and keep track of all branching and do statistics over that.
 This is in contrast with ordinary geometry, where uniqueness, well-definedness, and top-down structure are a primary goal, as the people who laid the foundations hundreds of years ago could only do pen-and-paper computations and abstract arguments, so they could handle only objects carved by very specific, but brittle, assumptions.
 
-Note that already the real numbers are uncomputable and cannot be stored in finite memory.
+*Note:* Already the real numbers are uncomputable and cannot be stored in finite memory.
 
 Although we have code, we do not expect infrageometry to produce better simulations or predictions for macroscopic theories, because of computational irreducibility.
 We do not aim to provide better bounds on possible smooth geometry in terms of discrete invariants either.

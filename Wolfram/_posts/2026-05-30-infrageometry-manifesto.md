@@ -15,7 +15,7 @@ Notions such as dimension, gauge degrees of freedom, observer independence, and 
 *Note:* A graph is nothing more than a metric space with an integer-valued geodesic metric, and a hypergraph is just a graph together with a cochain on its unit Rips-Vietoris complex that is supported on cliques corresponding to hyperedges.
 
 We do not primarily try to find a suitable graph that represents a given smooth manifold and then study to what extent it determines that manifold.
-Methods of that approach would include, for example, embedding trivalent graphs into a Riemannian manifold with sufficiently short edges, all of the same length, and vertex density corresponding to volume; constructing approximate unit-length embeddings of graphs in Euclidean spaces; manifold learning; and computing invariants under coarse equivalence and deriving bounds on them in terms of discrete invariants.
+Methods of that approach would include, for example, embedding trivalent graphs into a Riemannian manifold with sufficiently short edges, all of the same length, distributed proportionally to the volume; constructing approximate unit-length embeddings of graphs in Euclidean spaces; manifold learning; and computing invariants under coarse equivalence and deriving bounds on them in terms of discrete invariants.
 Instead, we ask what geometric theories a computationally bounded observer, with possibly limited capacity, would build about the discrete substrate it observes, which geometric notions make sense, and which properties they satisfy.
 From this perspective, ordinary geometry can be seen as an idealization of macro-experience by macro-observers.
 

@@ -15,20 +15,20 @@ Notions such as dimension, gauge degrees of freedom, observer independence, and 
 *Note:* A graph is nothing more than a metric space with an integer-valued geodesic metric, and a hypergraph is just a graph together with a cochain on its unit Rips-Vietoris complex that is supported on cliques corresponding to hyperedges.
 
 We do not primarily try to find a suitable graph that represents a given smooth manifold and then study to what extent it determines that manifold.
-Methods of that approach would include, for example, embedding trivalent graphs with sufficiently short edges, all of the same length, and vertex density corresponding to volume to a Riemannian manifold; constructing approximate unit-length embeddings of graphs in Euclidean spaces; manifold learning; and computing invariants of Riemannian manifolds under coarse equivalence.
+Methods of that approach would include, for example, embedding trivalent graphs into a Riemannian manifold with sufficiently short edges, all of the same length, and vertex density corresponding to volume; constructing approximate unit-length embeddings of graphs in Euclidean spaces; manifold learning; and computing invariants under coarse equivalence and deriving bounds on them in terms of discrete invariants.
 Instead, we ask what geometric theories a computationally bounded observer, with possibly limited capacity, would build about the discrete substrate it observes, which geometric notions make sense, and which properties they satisfy.
 From this perspective, ordinary geometry can be seen as an idealization of macro-experience by macro-observers.
 
 Our theory is computable at every level, so we build the framework of infrageometry primarily as code.
 We put significant effort into designing a language for convenient infrageometric constructions, along with natural generalizations and parametrizations.
 Due to this computability, we can utilize computers and AI to run computational experiments and explorations.
-We use robust aggregated observables, detect features and classify, enumerate all cases, and keep track of all branching and do statistics over that.
+We use robust aggregated observables, detect and classify features, enumerate all cases, and keep track of all branching and do statistics over it.
 This is in contrast with ordinary geometry, where uniqueness, well-definedness, and top-down structure are a primary goal, as the people who laid the foundations hundreds of years ago could only do pen-and-paper computations and abstract arguments, so they could handle only objects carved by very specific, but brittle, assumptions.
 
 *Note:* Already the real numbers are uncomputable and cannot be stored in finite memory.
 
 Although we have code, we do not expect infrageometry to produce better simulations or predictions for macroscopic theories, because of computational irreducibility.
-We do not aim to provide better bounds on possible smooth geometry in terms of discrete invariants either.
+We also do not aim to improve the classical discretization and reconstruction pipeline.
 Our main goal is to build a framework and demonstrate the emergence of geometry in the Wolfram computational universe.
 Assuming this has something to do with nature, we are answering the question of why geometry appears and is so successful, and what its variants for different scales, substrates, and observers are.
 

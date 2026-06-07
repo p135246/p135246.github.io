@@ -38,15 +38,15 @@ Assuming this has something to do with nature, we are answering the question of 
 For some very early work, see:
 
 - the [talks in Srní and Madrid][talks]
-- the [Austin conference post][austin-post] (to be published)
+- the [Austin conference post][austin-post] (to be published soon)
 
 I am currently developing the following repositories:
 
 - [Infrageometry](https://github.com/WolframInstitute/Infrageometry)
 - [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry)
-- [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory)
-- [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis)
-- [InfraCausality](https://github.com/WolframInstitute/InfraCausality)
+- [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory) (to be published soon)
+- [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis) (to be published soon)
+- [InfraCausality](https://github.com/WolframInstitute/InfraCausality) (to be published soon)
 
 This is joint work with S. Wolfram, who has laid out the main philosophical directions, and with others on the Wolfram Institute team.
 

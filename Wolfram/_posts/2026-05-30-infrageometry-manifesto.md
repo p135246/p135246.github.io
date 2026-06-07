@@ -20,7 +20,7 @@ Instead, we ask what geometric theories a computationally bounded observer, with
 From this perspective, ordinary geometry can be seen as an idealization of macro-experience by macro-observers.
 
 Our theory is computable at every level, so we build the framework of infrageometry primarily as code.
-We put significant effort into designing a language for convenient infrageometric constructions, along with natural generalizations and parametrizations.
+We put significant effort into designing a language for convenient infrageometric constructions, along with naturally parametrized generalizations, which are often discovered through implementations.
 Due to this computability, we can utilize computers and AI to run computational experiments and explorations.
 We use robust aggregated observables, detect and classify features, enumerate all cases, and keep track of all branching and do statistics over it.
 This is in contrast with ordinary geometry, where uniqueness, well-definedness, and top-down structure are a primary goal, as the people who laid the foundations hundreds of years ago could only do pen-and-paper computations and abstract arguments, so they could handle only objects carved by very specific, but brittle, assumptions.

@@ -45,7 +45,7 @@ I am currently developing the following repositories:
 - [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis) (to be published soon)
 - [InfraCausality](https://github.com/WolframInstitute/InfraCausality) (to be published soon)
 
-This is joint work with S. Wolfram, who has laid out the main philosophical directions, and with others on the [Wolfram Institute][WI] team.
+This is joint work with S. Wolfram, who has laid out the main philosophical directions and wrote the [technical introduction to the WPP](https://www.wolframphysics.org/technical-introduction/limiting-behavior-and-emergent-geometry/), and with others on the [Wolfram Institute][WI] team.
 
 [WP]: https://www.wolframphysics.org/
 [talks]: /wolfram/2026/03/31/talks-infrageometry-srni-madrid.html

@@ -5,9 +5,6 @@ mathjax:    false
 utterances: true
 ---
 
-*This text is a living document.
-Last updated on 2026-06-06.*
-
 # Infrageometry Manifesto
 
 Infrageometry is not just ordinary discrete geometry.

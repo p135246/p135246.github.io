@@ -28,7 +28,7 @@ This is in contrast with ordinary geometry, where uniqueness, well-definedness, 
 *Note:* Already the real numbers are uncomputable and cannot be stored in finite memory.
 
 Although we have code, we do not expect infrageometry to produce better simulations or predictions for macroscopic theories, because of computational irreducibility.
-We also do not aim to improve the classical discretization and reconstruction pipeline.
+We also do not aim to improve the classical discretization and reconstruction pipeline or to optimize computations with the discretized structures.
 Our main goal is to build a framework and demonstrate the emergence of geometry in the Wolfram computational universe.
 Assuming this has something to do with nature, we are answering the question of why geometry appears and is so successful, and what its variants for different scales, substrates, and observers are.
 

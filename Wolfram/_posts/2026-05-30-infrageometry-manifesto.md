@@ -1,24 +1,55 @@
 ---
-title:      "Infrageometry Manifesto"
+title:      "What Is Infrageometry?"
 categories: [Wolfram]
 mathjax:    false
 utterances: true
 ---
 
-*This manifesto is a living document. Last updated on 2026-05-30.*
+*This text is a living document.
+Last updated on 2026-06-06.*
 
-# Infrageometry Manifesto
+# What Is Infrageometry?
 
-The purpose of this manifesto is to distinguish Infrageometry from ordinary discrete geometry. The primary question is not how to discretize aspects of a smooth manifold and encode as much geometry as possible combinatorially, or how to associate a geometry to a graph based on its embedding, manifold learning, and coarse equivalence. Even though understanding this pipeline, implementing it, and building bridges to it, for example through bounds that make the associated geometry less fuzzy, are also part of the work, that is not the central question.
+Infrageometry is not just ordinary discrete geometry.
+It is a foundational theory of geometry on graphs and hypergraphs, in which ordinary geometry - be it Euclid's geometry, algebraic geometry, or differential geometry - emerges as an effective description on sufficiently large graphs and at sufficiently large scales.
+In the context of the [Wolfram Physics Project][WP], this emergence also depends on the class of observers along certain classes of rewriting paths.
+Notions such as dimension, gauge degrees of freedom, observer independence, and relativity should arise within infrageometry as emergent phenomena, rather than being assumed from the start as in ordinary geometry.
 
-Instead, the question is which notions of geometry are native to the discrete substrate and which notions would be developed by a discrete, computationally bounded observer within it. To do that, the existing mathematics that arose historically from macro-observers modeling the macroworld through abstract, idealized, and utterly uncomputable notions is intentionally set aside, and only what is needed and natural at the discrete observer's scale on sufficiently large graphs is considered. The aim is to explain geometric aspects of the universe, such as dimension, gauge degrees of freedom, observer independence, and relativity, as emergent and persistent aggregate properties of particular (hyper)graphs along certain rewriting paths.
+Note that a graph is nothing more than a metric space with an integer-valued geodesic metric, and a hypergraph is just a graph together with a cochain on its unit Rips-Vietoris complex that is supported on cliques corresponding to hyperedges.
 
-This is also meant to be pursued computationally, with code present at every step. The least complex natural computable geometric notions are defined and implemented, and it is studied whether they can branch out and reproduce structures known from continuous models in the limit of many rewriting steps. This is tested empirically by setting up computational experiments involving the detection of emergent persistent features with respect to defined observables, and the clustering of behaviors across different rewriting paths.
-In the future, the aim is also to formulate what the limit is and to prove limit theorems about the resulting structures.
+We do not primarily try to find a suitable graph that represents a given smooth manifold and then study to what extent it determines that manifold.
+Methods of that approach would include, for example, embedding trivalent graphs with sufficiently short edges, all of the same length, and vertex density corresponding to volume; constructing approximate unit-length embeddings of graphs in Euclidean spaces; manifold learning; and computing invariants of Riemannian manifolds under coarse equivalence.
+Instead, we ask what geometric theories a computationally bounded observer, with possibly limited capacity, would build about the discrete substrate it observes, which geometric notions make sense, and which properties they satisfy.
+From this perspective, ordinary geometry can be seen as an idealization of macro-experience by macro-observers.
 
-The central question is whether the seemingly continuous, unbounded, and unique macroworld might emerge from a discrete substrate characterized by indivisibility, boundedness, and ambiguity. Given physics' advances in uncovering homogeneous microstructure by probing ever smaller scales, the approach presented here appears to be the most natural way from the point of view of fundamental theories of nature. The aim is not to model macroscopic effects efficiently by starting from idealized notions, but to build a coherent framework in which emergence can be demonstrated.
+Our theory is computable at every level, so we build the framework of infrageometry primarily as code.
+We put significant effort into designing a language for convenient infrageometric constructions, along with natural generalizations and parametrizations.
+Due to this computability, we can utilize computers and AI to run computational experiments and explorations.
+We use robust aggregated observables, detect features and classify, enumerate all cases, and keep track of all branching and do statistics over that.
+This is in contrast with ordinary geometry, where uniqueness, well-definedness, and top-down structure are a primary goal, as the people who laid the foundations hundreds of years ago could only do pen-and-paper computations and abstract arguments, so they could handle only objects carved by very specific, but brittle, assumptions.
 
-See the [talks in Srní and Madrid][talks] for some very early work; see also the [Austin conference post][austin-post] (to be published), and stay tuned for more mature work later in 2026.
+Note that already the real numbers are uncomputable and cannot be stored in finite memory.
 
+Although we have code, we do not expect infrageometry to produce better simulations or predictions for macroscopic theories, because of computational irreducibility.
+We do not aim to provide better bounds on possible smooth geometry in terms of discrete invariants either.
+Our main goal is to build a framework and demonstrate the emergence of geometry in the Wolfram computational universe.
+Assuming this has something to do with nature, we are answering the question of why geometry appears and is so successful, and what its variants for different scales, substrates, and observers are.
+
+For some very early work, see:
+
+- the [talks in Srní and Madrid][talks]
+- the [Austin conference post][austin-post] (to be published)
+
+I am currently developing the following repositories:
+
+- [Infrageometry](https://github.com/WolframInstitute/Infrageometry)
+- [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry)
+- [InfraGaugeTheory]
+- [InfraAnalysis]
+- [InfraCausality]
+
+This is joint work with S. Wolfram, who has laid out the main philosophical directions, and with others on the Wolfram Institute team.
+
+[WP]: https://www.wolframphysics.org/
 [talks]: /wolfram/2026/03/31/talks-infrageometry-srni-madrid.html
 [austin-post]: /wolfram/2026/06/15/wolfram-models-conference-austin.html

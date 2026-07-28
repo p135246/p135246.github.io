@@ -72,6 +72,12 @@ Along the way I have crystallized some ideas for future workflow improvements:
 
 *[LLM generated]*
 
+### Version 4.9 (2026-07-28)
+
+[Version 4.9.0][comp-research] closes a full plugin audit.
+The version-4 line added real Wolfram documentation for paclets (symbol pages that resolve via F1 and the Documentation Center, deployed publicly on publish), a dual-engine Markdown-to-notebook converter that auto-detects a pinned rich parser for sources with frontmatter or LaTeX math, research notebooks generated one-way in a fixed canonical order (definitions, then theorems with computed evidence, then symbols and functions used, then the code calls) with a per-cell fingerprint detecting edits made in the `.nb` instead of the source, and an opt-in autonomous driver that works items unattended — one cold headless session per task, landing on a review branch a human merges.
+The audit fixes make the plugin's own documentation obey its rules: each policy is stated once and linked from everywhere else, the three oversized skills split into a small core plus read-on-demand siblings, all 21 skills share one section skeleton (When to use / Steps / Integration / When NOT to use), and the human-revision protocol is named in `CLAUDE.md` instead of being re-derived per skill.
+
 ### Version 3.8 (2026-05-31)
 
 [Version 3.8.0][comp-research] makes Wolfram execution **MCP-first**: work runs in one persistent [Wolfram MCP][wolfram-mcp] kernel rather than spawning a new kernel per call, so the plugin stays within the license's kernel budget. Standalone scripts become a fallback for when no kernel is shared.

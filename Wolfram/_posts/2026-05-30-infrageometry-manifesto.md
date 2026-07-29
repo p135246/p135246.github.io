@@ -45,7 +45,7 @@ I am currently developing the following repositories:
 - [InfraUniverseRegistry](https://github.com/WolframInstitute/InfraUniverseRegistry) — landscape of the [Registry of Notable Universes][registry]
 - [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory) — gauge theory for fibered graphs
 - [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis) — analysis on directed graphs seen as thick lines
-- [InfraCausality](https://github.com/WolframInstitute/InfraCausality) — causality and special relativity from directed graphs
+- [InfraCausality](https://github.com/WolframInstitute/InfraCausality) — special relativity from directed graphs seen as causal sets
 
 This is joint work with S. Wolfram, who has laid out the main philosophical directions and wrote the [technical introduction to the WPP](https://www.wolframphysics.org/technical-introduction/limiting-behavior-and-emergent-geometry/), and with others on the [Wolfram Institute][WI] team.
 

@@ -5,7 +5,7 @@ mathjax:    false
 utterances: true
 ---
 
-*This post is a living document. Last updated on 2026-05-31.*
+*This post is a living document. Last updated on 2026-07-29.*
 
 # Computational research and AI
 
@@ -72,37 +72,37 @@ Along the way I have crystallized some ideas for future workflow improvements:
 
 *[LLM generated]*
 
+### Version 4.10 (2026-07-29)
+
+[Version 4.10.0][comp-research] treats a research notebook as a paper rather than a worksheet: the mathematics comes first and the machinery moves out of the reader's way. A claim earns its place by a computation that answers something, not by a picture illustrating it.
+
 ### Version 4.9 (2026-07-28)
 
-[Version 4.9.0][comp-research] closes a full plugin audit.
-The version-4 line added real Wolfram documentation for paclets (symbol pages that resolve via F1 and the Documentation Center, deployed publicly on publish), a dual-engine Markdown-to-notebook converter that auto-detects a pinned rich parser for sources with frontmatter or LaTeX math, research notebooks generated one-way in a fixed canonical order (definitions, then theorems with computed evidence, then symbols and functions used, then the code calls) with a per-cell fingerprint detecting edits made in the `.nb` instead of the source, and an opt-in autonomous driver that works items unattended — one cold headless session per task, landing on a review branch a human merges.
-The audit fixes make the plugin's own documentation obey its rules: each policy is stated once and linked from everywhere else, the three oversized skills split into a small core plus read-on-demand siblings, all 21 skills share one section skeleton (When to use / Steps / Integration / When NOT to use), and the human-revision protocol is named in `CLAUDE.md` instead of being re-derived per skill.
+[Version 4.9.0][comp-research] turns the plugin's rules on the plugin itself — a thing is said once and read on demand, rather than repeated wherever it might be needed. The version-4 line asked what the assistant can be trusted to do alone: generate a document one way from a source it does not own, and work through a task list unattended, with a human merging the result.
 
 ### Version 3.8 (2026-05-31)
 
-[Version 3.8.0][comp-research] makes Wolfram execution **MCP-first**: work runs in one persistent [Wolfram MCP][wolfram-mcp] kernel rather than spawning a new kernel per call, so the plugin stays within the license's kernel budget. Standalone scripts become a fallback for when no kernel is shared.
+[Version 3.8.0][comp-research] treats the compute session as shared and finite rather than free. Work happens inside one live [Wolfram][wolfram-mcp] session the human is also sitting in, instead of starting a fresh one whenever that is convenient.
 
 ### Version 3.2 (2026-05-29)
 
-[Version 3.2.0][comp-research] adds a more focused work-tracking workflow, with one place for specifications, task checklists, and session progress, together with a lighter planning process to limit context rot. Planning also moves out of the wiki and into a workflow better suited to version control.
+[Version 3.2.0][comp-research] separates what is known from what is being done. Execution state leaves the knowledge base and becomes something version control can follow, and planning gets deliberately lighter — a long plan rots faster than it is followed.
 
 ### Version 3 (2026-04-12)
 
-[Version 3.0.0][comp-research] expands the plugin from a wiki-centric research tool into a full project lifecycle manager: scaffolding for research projects, paclet repos, and standalone paclets; skills for building and publishing paclets to [Wolfram Cloud][wolfram-cloud]; LaTeX paper scaffolding with [amsart][amsart] and [biblatex][biblatex]; and search across the [Wolfram ecosystem][wolfram-docs] (documentation, [Function Repository][function-repo], [Community][wolfram-community], [writings][wolfram-writings], [Physics Project][WP]).
+[Version 3.0.0][comp-research] widens the ambition from exploring to shipping: a project is carried from the first question through to a [paclet][paclet-repo] or a paper, rather than stopping at organized notes.
 
 ### Version 2 (2026-04-05)
 
-[Version 2.0.0][comp-research] introduces a plain-markdown wiki as the central knowledge base — readable by both LLMs and humans, version-controlled, with cross-references the LLM navigates instead of scanning every file. Resources and notebooks are stored as Markdown with recovery instructions, built on demand (idea by [sw1sh][sw1sh]). A revision protocol prevents the LLM from overwriting human-edited content. A tour skill walks through the project from simple to advanced.
+[Version 2.0.0][comp-research] puts the knowledge in plain text that the human and the model read the same way, navigated by links rather than by scanning everything. What can be regenerated is rebuilt on demand instead of stored (idea by [sw1sh][sw1sh]), and what the human wrote is protected from being overwritten.
 
 The core [MCP][mcp] servers remain [Wolfram MCP][wolfram-mcp] (or the unofficial [wolfram-mcp][wolfram-mcp-sw1sh] with [LSP][lsp] support) and [arXiv-mcp][arxiv-mcp] (plus [arxiv-latex-mcp][arxiv-latex-mcp] for reading LaTeX source).
 
 ### Version 1 (2026-03-04)
 
-The first version of the [plugin][comp-research] bundled a few Claude skills: wolfram-notebook for creating Wolfram notebooks from prompts via Markdown import (an idea by [sw1sh][sw1sh]), and computational-exploration for scaffolding a structured research project.
+The first version of the [plugin][comp-research] was a handful of task-shaped skills: turn a prompt into a Wolfram notebook (an idea by [sw1sh][sw1sh]), scaffold a research project, gather papers from [arXiv][arxiv] and [Wolfram Community][wolfram-community] into cited notes.
 
-The skill searched [arXiv][arxiv] and [Wolfram Community][wolfram-community] for papers, downloaded them, and produced organized notes with citations. Planned skills included notes-to-article, list-topics, setup-experiment, and polish-research.
-
-After using this on several projects, I found the design too broad and not goal-oriented enough. Exploration, resource management, and knowledge organization were tangled together. Knowledge was spread across `CLAUDE.md`, notebooks, LaTeX notes, and resources. Generated notebooks were redundant to store, as they can be imported from Markdown anyway. Resources had no recovery mechanism, so a fresh clone lost all downloaded papers. And there was no revision protocol, so the LLM could overwrite user-edited content.
+After a few projects the design felt too broad and not goal-oriented enough. Exploring, collecting, and organizing were tangled together, and there was no single place where what I knew actually lived. That diagnosis is what every later version answers.
 
 [WI]: https://wolframinstitute.org/
 [WP]: https://www.wolframphysics.org/

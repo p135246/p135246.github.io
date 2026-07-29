@@ -39,12 +39,13 @@ For some very early work, see:
 
 I am currently developing the following repositories:
 
-- [Infrageometry](https://github.com/WolframInstitute/Infrageometry)
-- [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry)
-- [InfraElements](https://github.com/WolframInstitute/InfraElements)
-- [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory) (to be published soon)
-- [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis) (to be published soon)
-- [InfraCausality](https://github.com/WolframInstitute/InfraCausality) (to be published soon)
+- [Infrageometry](https://github.com/WolframInstitute/Infrageometry) — differential geometry of graphs
+- [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry) — infrageometry from primitives
+- [InfraElements](https://github.com/WolframInstitute/InfraElements) — Euclid's Elements on graphs
+- [InfraUniverseRegistry](https://github.com/WolframInstitute/InfraUniverseRegistry) — infrageometric landscape of the [Registry of Notable Universes][registry]
+- [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory) — gauge theory for fibered graphs
+- [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis) — analysis on directed graphs seen as thick lines
+- [InfraCausality](https://github.com/WolframInstitute/InfraCausality) — causality and special relativity from directed graphs
 
 This is joint work with S. Wolfram, who has laid out the main philosophical directions and wrote the [technical introduction to the WPP](https://www.wolframphysics.org/technical-introduction/limiting-behavior-and-emergent-geometry/), and with others on the [Wolfram Institute][WI] team.
 
@@ -52,5 +53,6 @@ This is joint work with S. Wolfram, who has laid out the main philosophical dire
 [talks]: /wolfram/2026/03/31/talks-infrageometry-srni-madrid.html
 [austin-post]: /wolfram/2026/06/15/wolfram-models-conference-austin.html
 [observer]: https://writings.stephenwolfram.com/2023/12/observer-theory/
+[registry]: https://www.wolframphysics.org/universes/
 [irreducibility]: https://www.wolframscience.com/nks/p737--computational-irreducibility/
 [WI]: https://www.wolframinstitute.org/

@@ -42,7 +42,7 @@ I am currently developing the following repositories:
 - [Infrageometry](https://github.com/WolframInstitute/Infrageometry) — differential geometry of graphs
 - [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry) — infrageometry from primitives
 - [InfraElements](https://github.com/WolframInstitute/InfraElements) — Euclid's Elements on graphs
-- [InfraUniverseRegistry](https://github.com/WolframInstitute/InfraUniverseRegistry) — infrageometric landscape of the [Registry of Notable Universes][registry]
+- [InfraUniverseRegistry](https://github.com/WolframInstitute/InfraUniverseRegistry) — landscape of the [Registry of Notable Universes][registry]
 - [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory) — gauge theory for fibered graphs
 - [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis) — analysis on directed graphs seen as thick lines
 - [InfraCausality](https://github.com/WolframInstitute/InfraCausality) — causality and special relativity from directed graphs

@@ -1,11 +1,11 @@
 ---
-title:      "Infrageometry Manifesto"
+title:      "A Guide to Infrageometry"
 categories: [Wolfram]
 mathjax:    false
 utterances: true
 ---
 
-# Infrageometry Manifesto
+# A Guide to Infrageometry
 
 Infrageometry is not just ordinary discrete geometry.
 It is a foundational theory of geometry on graphs and hypergraphs, in which ordinary geometry - be it Euclidean geometry, algebraic geometry, or differential geometry - emerges as an effective description on sufficiently large graphs and at sufficiently large scales.

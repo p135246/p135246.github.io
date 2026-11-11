@@ -5,7 +5,7 @@ mathjax:    false
 utterances: true
 ---
 
-*This post is a living document. Last updated on 2026-07-29.*
+*This post is a living document. Last updated on 2026-10-03.*
 
 # Computational research and AI
 
@@ -71,6 +71,44 @@ Along the way I have crystallized some ideas for future workflow improvements:
 ## Version history
 
 *[LLM generated]*
+
+### Version 5.6 (2026-10-03)
+
+Version 5.6.0 gives a document a memory of how it was revised. A correction the human made by hand in one round used to be forgotten as soon as the round ended, and could return in a later one wherever a note made the machine rewrite that passage. Now each document keeps a record beside it of what the human wrote, where, and what came back, and from it a short list of rules that the machine reads before every new version. A mistake needs to be corrected once. The record also changes what is kept: the notebook, a generated thing, stays out of version control, and its text source, which is what the human and the machine actually discuss, takes its place.
+
+### Version 5.5 (2026-09-30)
+
+Version 5.5.0 gives every project the same handwriting. Until now each repository carried its own copy of the code conventions, and the copies had drifted apart: one allowed what another forbade, and a personal style kept in the author's own configuration was silently overruled by the project it was meant to govern. The conventions now live in one place and are the same for code, for the notebooks that explain it and for the papers that state it: what a definition looks like on the page, how a figure is coloured so that it reads in light and in dark, how a notebook walks a reader from pictures to a result. A project no longer says how to write; it says only what is particular to it.
+
+### Version 5.4 (2026-09-27)
+
+Version 5.4.0 moves the review into the document. The human no longer explains in a chat what should change in a paper or a notebook. They write short notes into the text itself, or simply fix it, and the machine answers with the next version beside the old one. Every round is kept, so the exchange between reader and machine becomes a trail of drafts, the way a manuscript passes between an author and an editor. The machine may change only what the notes ask for, and nothing else.
+
+### Version 5.3 (2026-09-26)
+
+Version 5.3.0 turns the description of the tool into its specification. The front page now says what the plugin promises, area by area, each with the reason it exists, and every sentence there is a promise a user can hold it to. Where the promise runs ahead of the code, the gap becomes a piece of planned work, so the page is at once the philosophy, the acceptance test and the backlog. The same version lets the machine work that backlog while the human watches: each task goes to its own worker, visible and open to a word from the human, rather than to a process nobody can see.
+
+### Version 5.1 (2026-09-26)
+
+[Version 5.1.0][comp-research] admits that the plan of work has two readers. Until now it was written for the machine: a compact contract that a fresh session could load cheaply, which a human could read but was not meant to enjoy. Now it opens the way a good issue tracker does, with what the task is, why it matters and how we will know it is done, and the technical contract comes after. The division of labour follows the same line. The human spends hours on the backlog writing the why and the what, while the machine thinks through the how. Nothing runs until the human says the plan is ready, and nothing counts as finished until a human has checked it against instructions the machine left for that purpose. Autonomy grows by keeping the human at the two ends where judgement matters, not by removing them.
+
+Version 5.1.1 changes how mathematical objects are written in code. A segment or a group is now an inert name holding only its defining data, and it computes nothing until it meets the structure it is read in. An object exists only where a theorem says it is well defined. The code conventions also move closer to those of a larger sister project: input that does not fit is left alone rather than rejected, and a question the code cannot decide stays open instead of being answered "no".
+
+### Version 4.16 (2026-08-21)
+
+[Version 4.16.0][comp-research] tests a promise instead of restating it. The system had a rule that nothing a document discards may disappear quietly, and the rule had never met a document with something to discard, because the exercise built to produce one produced nothing. Constructing the missing case took an afternoon and found three separate ways the promise could not be kept: it was announced after the document it governs had already been finished, it told the writer to mark what was left over without saying what a mark is, and it reported to a place the reporter cannot write to. None of that is visible from the design side and all of it is obvious from one instance. There is a second lesson about artifacts: the earlier exercise's documents were thrown away once their conclusions had been written down, and that is precisely what left this promise untested. A conclusion is not a substitute for the thing it was drawn from.
+
+### Version 4.15 (2026-08-21)
+
+[Version 4.15.0][comp-research] is the first version whose writing rules were read rather than reasoned. They had been written from a diagnosis of why machine-written documents flood the page, which makes every one of them a guess until somebody sits down with a finished document and checks whether it can be checked. Most of the guesses held. One was backwards: cutting the examples that accompany new definitions had been counted as restraint, and it is the opposite, because a definition is where the reader meets an object for the first time and cannot verify anything about it without seeing one. Restraint that removes what the reader needs is not restraint. The general lesson is cheaper than the specific one — a rule invented to prevent a failure is worth about as much as an untested hypothesis, and reading one real document under it costs less than living with it.
+
+### Version 4.14 (2026-08-20)
+
+[Version 4.14.0][comp-research] lets a plan price the work it divides. Whoever splits a problem into sessions already knows which of them is routine and which one decides something, and that judgement used to be thrown away — an unattended task ran on whichever model happened to be selected that day. Now the plan carries the judgement and the machine obeys it. The honesty around it matters as much: the report says which model actually did each piece, declines to claim it knows how hard the machine was thinking, and when the cheap choice fails it says so rather than quietly trying the same thing again. A first real run then priced the idea and corrected it. The cheapest model did the work correctly and then failed the bookkeeping around it, which is the expensive kind of failure: it costs a person's attention rather than pennies. So the cheap option came off the table for anything that has to keep its own books. Frugality is only frugal when what you are saving is the scarce thing, and the scarce thing here is not money.
+
+### Version 4.13 (2026-08-18)
+
+[Version 4.13.0][comp-research] asks a document to earn the reader's trust before it asks for their time. A written argument is either complete enough to be checked line by line or it does not belong in the paper; what was merely observed to hold moves somewhere that says so, and a small result proved properly is worth more than a broad one hedged. The assistant is named as the author, since it wrote the thing, and the paper states plainly how much of its own direction was the assistant's — whether a human specified the mathematics or only named a topic and let it look. That is a question a reader of a machine-written paper asks first, and it should not have to be guessed.
 
 ### Version 4.10 (2026-07-29)
 

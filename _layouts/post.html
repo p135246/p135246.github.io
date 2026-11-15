@@ -1,4 +1,7 @@
 ---
 layout: page
 ---
+{% if page.last_updated %}
+<p><em>Updated <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: "%B %-d, %Y" }}</time></em></p>
+{% endif %}
 {{ content }}

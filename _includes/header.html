@@ -2,9 +2,10 @@
   <div class="horizontal-menu">
       <ul>
           <li><a href="/index.html" {% if page.nav-name == 'home' %}class='active'{% endif %}>Home</a></li>
+          <li><a href="/Contact.html" {% if page.nav-name == 'contact' %}class='active'{% endif %}>Contact</a></li>
+          <li><a href="/WorkWithMe.html" {% if page.nav-name == 'work' %}class='active'{% endif %}>Freelance</a></li>
           <li><a href="/Math.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
-          <li><a href="/Software.html" {% if page.nav-name == 'software' %}class='active'{% endif %}>Software</a></li>
-          <li><a href="/Wolfram.html" {% if page.nav-name == 'wolfram' %}class='active'{% endif %}>Wolfram</a></li>
+          <li><a href="/Software.html" {% if page.nav-name == 'software' %}class='active'{% endif %}>IT</a></li>
           <li><a href="/Hobbies.html" {% if page.nav-name == 'hobbies' %}class='active'{% endif %}>Hobbies</a></li>
           <li class="horizontal-menu-sep"><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
       </ul>
@@ -13,9 +14,10 @@
             <button onclick="toggleHorizontalMenu()" class="dropdown-menu-button">Menu</button>
             <ul id="dropdown-menu-content" class="dropdown-menu-content">
               <li><a href="/index.html" {% if page.nav-name == 'home' %}class='active'{% endif %}>Home</a></li>
+              <li><a href="/Contact.html" {% if page.nav-name == 'contact' %}class='active'{% endif %}>Contact</a></li>
+              <li><a href="/WorkWithMe.html" {% if page.nav-name == 'work' %}class='active'{% endif %}>Freelance</a></li>
               <li><a href="/Math.html" {% if page.nav-name == 'math' %}class='active'{% endif %}>Math</a></li>
-              <li><a href="/Software.html" {% if page.nav-name == 'software' %}class='active'{% endif %}>Software</a></li>
-              <li><a href="/Wolfram.html" {% if page.nav-name == 'wolfram' %}class='active'{% endif %}>Wolfram</a></li>
+              <li><a href="/Software.html" {% if page.nav-name == 'software' %}class='active'{% endif %}>IT</a></li>
               <li><a href="/Hobbies.html" {% if page.nav-name == 'hobbies' %}class='active'{% endif %}>Hobbies</a></li>
               <li class="horizontal-menu-sep"><a href="/Posts.html" {% if page.nav-name == 'posts' %}class='active'{% endif %}>Posts</a></li>
             </ul>

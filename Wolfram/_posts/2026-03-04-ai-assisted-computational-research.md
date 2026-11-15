@@ -144,7 +144,6 @@ After a few projects the design felt too broad and not goal-oriented enough. Exp
 
 [WI]: https://wolframinstitute.org/
 [WP]: https://www.wolframphysics.org/
-[wolfram-page]: /Wolfram.html
 [infrageometry-post]: /wolfram/2026/03/31/talks-infrageometry-srni-madrid.html
 [WL]: https://www.wolfram.com/language/
 [codecompanion]: https://github.com/olimorris/codecompanion.nvim

@@ -1,10 +1,11 @@
 ---
-permalink:  Wolfram.html
-layout:     category
-nav-name:   wolfram
-category:   Wolfram
+title:      Wolfram Involvement
+layout:     post
+categories: [Math, Software]
+pinned:     true
+last_updated: 2026-11-15
 ---
-# Wolfram
+# Wolfram Involvement
 
 From October 2025 to October 2026, I was a research fellow at the [Wolfram Institute](https://www.wolframinstitute.org/).
 My fellowship was funded by the John Templeton Foundation through the grant [Causality, Observers and Computation: A New Approach to Fundamental Physics and Metamathematics][templeton-grant].
@@ -14,7 +15,7 @@ Under the direction of [Stephen Wolfram](https://www.stephenwolfram.com/), my ma
 The term Infrageometry was originally used by [Carlos Zapata-Carratalá](https://zapatacarratala.me/) and Jonathan Gorard for a program exploring how elementary hypergraph rewriting could simulate geometric operations such as homotopies of paths.
 Carlos further explored this idea in his [work at Arity Science](https://arity.science/findings/infrageometry/).
 
-After initial consultations with Stephen Wolfram and Nik Murzin, during which I learned about the basic concepts and philosophy, I set out to develop a physically and mathematically sound minimal-model pipeline for reconstructing spacetime geometry, as experienced by a given observer, from a single history in the multiway system of hypergraph rewriting.
+After initial consultations with Stephen Wolfram and Nik Murzin, during which I learned about the basic concepts and philosophy of Wolfram's computational universe, it became clear that a different approach was required. Hence I set out to develop a physically and mathematically sound minimal-model pipeline for reconstructing spacetime geometry for given observer, from a single history in the multiway system of hypergraph rewriting.
 
 As part of this work, I wanted to understand how geometry might emerge when a computationally bounded observer measures a large graph at a coarse scale, leading to the idea of scale-dependent geometry.
 In mathematical terms, one could think of defining Riemannian geometry and other geometric notions not in terms of a manifold equipped with a metric tensor and additional tensors, but through a scaled Gromov-Hausdorff limit of a sequence of graphs viewed as metric-measure spaces, together with a sequence of discrete minimal models of the relevant structures.
@@ -41,3 +42,5 @@ During my time at the Institute, I started several [other repositories](https://
 [WolframCommunity]:https://community.wolfram.com/web/hajekpavel
 [WolframEvents]:https://events.wolfram.com/
 [WolframBlog]:https://writings.stephenwolfram.com/
+
+{% include post-index.html posts=site.categories.Wolfram heading="Related Wolfram posts" %}

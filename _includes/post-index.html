@@ -1,0 +1,30 @@
+{%- if include.posts.size > 0 -%}
+{%- assign pinned_posts = include.posts | where: "pinned", true -%}
+{%- assign dated_posts = include.posts | where_exp: "post", "post.pinned != true" -%}
+{%- if include.limit -%}
+  {%- assign dated_posts = dated_posts | slice: 0, include.limit -%}
+{%- endif -%}
+{%- assign listed_posts = pinned_posts | concat: dated_posts -%}
+
+{% if include.heading %}<h2>{{ include.heading | escape }}</h2>{% endif %}
+<div class="posts">
+  <table style="table-layout:fixed;" cellspacing="0" cellpadding="0">
+    {% for post in listed_posts %}
+    {% if pinned_posts.size > 0 and forloop.index0 == pinned_posts.size %}
+    <tr class="post-list-separator" aria-hidden="true">
+      <td colspan="2"><hr style="border: 0; border-top: 1px solid currentColor; opacity: .25; margin: .35em 0;"></td>
+    </tr>
+    {% endif %}
+    <tr>
+      <td style="white-space: nowrap; vertical-align: baseline; padding-right: .3em">
+        {{ post.date | date: "[%b %d, %Y]" }}
+      </td>
+      <td style="vertical-align: baseline;">
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {% if post.pinned == true %}<span class="post-pin" role="img" aria-label="Pinned" title="Pinned">📌</span>{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}

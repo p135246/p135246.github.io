@@ -2,9 +2,17 @@
 permalink:  WorkWithMe.html
 layout:     page
 title:      Work with me
+nav-name:   work
 ---
 
 # Work with me
+
+I take on freelance work as a scientific consultant.
+I am a Freiberufler in Germany and have a German VAT number.
+
+Please use the [contact form][contact] to get in touch and briefly describe what you’d like to work on with me.
+
+## Work Statement
 
 With AI automatically expanding the amount of information and carrying us across domains in seconds, I think the most relevant aspects of human specialization are the universal, transferable ones. Mathematics stands out here. It trains us to establish a few stable points of understanding and use them as lighthouses while searching for a simple path through the vast landscape of information, at whose end is fundamental human understanding, mastery, and ownership together with the ability to communicate what we have learned along the way clearly to our human communities.
 
@@ -20,6 +28,4 @@ On the one hand, I am trained to work with pen and paper and write technical tex
 
 **Scientific Communication.** I can help with scientific outreach, including contacting the right people and presenting results in a paper, repository, or interactive website. I can also set up and advertise livestreams or help make animations and music with AI.
 
-Use the [contact form][contact] to briefly describe what you’d like to work on with me.
-
-[contact]: /#contact
+[contact]: /Contact.html

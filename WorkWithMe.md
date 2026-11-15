@@ -20,7 +20,7 @@ Please use the [contact form][contact] to get in touch and briefly describe what
 
 **Computification.** My training at Wolfram taught me to look for ways to make things computable. I can design a language for a problem or area with natural parameters and an effective, modular API. I take into account accessibility for people and AI agents so that the result can be used to scaffold experiments, test hypotheses in bounded cases, or support technical writing with computational checks. [ChernSimons][chern-simons]
 
-**Mentorship.** I enjoy supporting people in doing research they’re happy with and sharing what they find. I can help formulate a research question, scope a research area, define the output, and give ongoing feedback. I ask questions, pedantically push for details, and help keep the work on track. I can also help get a project unstuck and find a way forward when it seems like a lost cause. [Wolfram Community mentions][community-mentions], [Lie Algebras from Strings to Hyperstrings][hyperstrings], [Inverting the Sitnikov Problem][sitnikov], [Tracking EMEs][tracking-emes]
+**Mentorship.** I enjoy supporting people in doing research they’re happy with and sharing what they find. I can help formulate a research question, scope a research area, define the output, and give ongoing feedback. I ask questions, pedantically push for details, and help keep the work on track. I can also help get a project unstuck and find a way forward when it seems like a lost cause. [Wolfram Community mentions][community-mentions]
 
 **Scientific Communication.** I can help with scientific outreach, including contacting the right people and presenting results in a paper, repository, or interactive website. I can also set up and advertise livestreams or help make animations and music with AI. [MultiHistory][multihistory], [EigenAudio on YouTube][eigenaudio], [MultiHistory Science on YouTube][multihistory-youtube]
 
@@ -34,9 +34,6 @@ AI now expands the amount of information available to us autonomously and at gre
 [computational-research]: {% post_url Wolfram/2026-03-04-ai-assisted-computational-research %}
 [chern-simons]: https://github.com/p135246/ChernSimons
 [community-mentions]: https://community.wolfram.com/search?q=Hajek
-[hyperstrings]: https://community.wolfram.com/t/wsri26-lie-algebras-from-strings-to-hyperstrings/27298
-[sitnikov]: https://community.wolfram.com/t/wsri26-inverting-the-sitnikov-problem/27313
-[tracking-emes]: https://community.wolfram.com/t/wws26-tracking-emes-a-persistence-view-of-multiway-hypergraph-rewriting/26347
 [multihistory]: https://multihistory.org/
 [eigenaudio]: https://www.youtube.com/@EigenAudio
 [multihistory-youtube]: https://www.youtube.com/@MultiHistoryScience

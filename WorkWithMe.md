@@ -31,7 +31,7 @@ AI now expands the amount of information available to us autonomously and at gre
 
 [contact]: /Contact.html
 [infrageometry]: https://github.com/p135246/InfraGeometry
-[institute-repositories]: {% post_url Math/2026-11-15-wolfram-involvement %}#my-wolfram-institute-repositories
+[institute-repositories]: https://github.com/search?q=repo%3AWolframInstitute%2FInfraGeometry+repo%3AWolframInstitute%2FDiscreteGeometry+repo%3AWolframInstitute%2FSyntheticInfrageometry+repo%3AWolframInstitute%2FInfraElements+repo%3AWolframInstitute%2FInfraGaugeTheory+repo%3AWolframInstitute%2FInfraAnalysis+repo%3AWolframInstitute%2FInfraCausality+repo%3AWolframInstitute%2FInfraUniverseRegistry+repo%3AWolframInstitute%2FPersistenceRewriting+repo%3AWolframInstitute%2FUniversalityDB+repo%3AWolframInstitute%2FIteratedFiniteAutomaton+repo%3AWolframInstitute%2FMathNotebook+repo%3AWolframInstitute%2FClaudePluginComputationalResearch+repo%3AWolframInstitute%2FClaudePluginMarketplace&type=repositories
 [computational-research]: https://github.com/p135246/CodexPluginComputationalResearch
 [chern-simons]: https://github.com/p135246/ChernSimons
 [community-mentions]: https://community.wolfram.com/search?q=Hajek

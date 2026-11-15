@@ -4,8 +4,6 @@ nav-name:       contact
 ---
 # Contact
 
-I’m available for freelance contract work. See my [Work Statement](WorkWithMe.html#work-statement) for the kinds of projects and collaborations I take on.
-
 You can send me a message using the form below or reach out via:
 
 * **LinkedIn**: [linkedin.com/in/dr-pavel-hajek](https://www.linkedin.com/in/dr-pavel-hajek/)

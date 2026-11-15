@@ -1,14 +1,17 @@
 ---
-title:      "A Guide to Infrageometry"
+title:      "An Infrageometric Crossroad"
 categories: [Wolfram]
 mathjax:    false
 utterances: true
 ---
 
-# A Guide to Infrageometry
+# An Infrageometric Crossroad
 
-Infrageometry is not just ordinary discrete geometry.
-It is a foundational theory of geometry on graphs and hypergraphs, in which ordinary geometry - be it Euclidean geometry, algebraic geometry, or differential geometry - emerges as an effective description on sufficiently large graphs and at sufficiently large scales.
+**November 2026 update.** My understanding of what infrageometry should be has evolved since I wrote this post. I now use *emergent geometry* for this line of work. My [Wolfram Institute Involvement][wolfram-involvement] post points to the confusion. I’ve consolidated the code and theoretical work in the [InfraGeometry][infra-geometry] repository, where I’ll continue developing it until it is superseded by the emergent geometry initiative of our [Multihistory][multihistory-github] collaboration.
+
+## Original post
+
+Infrageometry asks which minimal computational models of geometry make sense on graphs and how seemingly continuous geometry can emerge from these models as an effective description of large graphs at large scales and in the limit of expanding rewriting.
 In the context of the [Wolfram Physics Project][WP], this emergence also depends on the class of observers along certain classes of rewriting paths.
 Notions such as dimension, gauge degrees of freedom, observer independence, and relativity should arise within infrageometry as emergent phenomena, rather than being assumed from the start as in ordinary geometry.
 
@@ -39,7 +42,7 @@ For some very early work, see:
 
 I am currently developing the following repositories:
 
-- [Infrageometry](https://github.com/WolframInstitute/Infrageometry) — differential geometry of graphs
+- [DiscreteGeometry](https://github.com/WolframInstitute/DiscreteGeometry) — geometry of graphs based on Rips complexes
 - [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry) — infrageometry from primitives
 - [InfraElements](https://github.com/WolframInstitute/InfraElements) — Euclid's Elements on graphs
 - [InfraUniverseRegistry](https://github.com/WolframInstitute/InfraUniverseRegistry) — landscape of the [Registry of Notable Universes][registry]
@@ -51,7 +54,10 @@ This is joint work with S. Wolfram, who has laid out the main philosophical dire
 
 [WP]: https://www.wolframphysics.org/
 [talks]: /wolfram/2026/03/31/talks-infrageometry-srni-madrid.html
-[austin-post]: /wolfram/2026/06/15/wolfram-models-conference-austin.html
+[austin-post]: /wolfram/2026/04/19/wolfram-models-conference-austin.html
+[wolfram-involvement]: {% post_url Math/2026-11-15-wolfram-involvement %}
+[infra-geometry]: https://github.com/p135246/InfraGeometry
+[multihistory-github]: https://github.com/Multihistory
 [observer]: https://writings.stephenwolfram.com/2023/12/observer-theory/
 [registry]: https://www.wolframphysics.org/universes/
 [irreducibility]: https://www.wolframscience.com/nks/p737--computational-irreducibility/

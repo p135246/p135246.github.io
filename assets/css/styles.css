@@ -204,28 +204,15 @@ main {
   box-sizing: border-box;
   max-width: 100%;
   padding: .65em 1.1em;
+  border: 1px solid #9eb9c3;
   border-radius: .6em;
-  color: #153848;
+  background: #fff;
+  color: darkblue;
   font-weight: bold;
   text-decoration: none;
 }
 
-.home-work-link {
-  border: 1px solid #568395;
-  background: #e0f2f8;
-  box-shadow: 0 2px 0 #568395;
-}
-
-.home-coffee-link {
-  border: 1px solid #9eb9c3;
-  background: #fff;
-}
-
-.home-work-link:hover {
-  background: #cce9f2;
-}
-
-.home-coffee-link:hover {
+.home-actions > a:hover {
   background: #f1f7f9;
 }
 

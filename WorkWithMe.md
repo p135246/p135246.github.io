@@ -7,10 +7,11 @@ nav-name:   work
 
 # Work with me
 
-I take on freelance work as a scientific consultant.
-I am a Freiberufler in Germany and have a German VAT number.
+I take on freelance work in mathematics, scientific software, and computational research.
 
 Please use the [contact form][contact] to get in touch and briefly describe what you’d like to work on with me.
+
+I’m registered as a freelancer (Freiberufler) in Germany and have a German VAT number.
 
 ## Services
 

@@ -30,7 +30,24 @@ Before my fellowship at the Institute ended, I managed to consolidate parts of t
 This format of publication seemed better suited to communicating computational research than LaTeX papers.
 Note that Carlos has also introduced his alternative to LaTeX papers: [Hyperiad](https://arity.science/hyperiad/notebook/), an interactive notebook format that runs Python directly in the browser and requires no installation.
 
-During my time at the Institute, I also started several [other repositories](https://github.com/WolframInstitute) and scientific projects, which I plan to pursue further through our [Multihistory collaboration](https://multihistory.org/).
+During my time at the Institute, I also started several [other repositories](#my-wolfram-institute-repositories) and scientific projects, which I plan to pursue further through our [Multihistory collaboration](https://multihistory.org/).
+
+## My Wolfram Institute repositories
+
+- [InfraGeometry](https://github.com/WolframInstitute/InfraGeometry)
+- [DiscreteGeometry](https://github.com/WolframInstitute/DiscreteGeometry)
+- [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry)
+- [InfraElements](https://github.com/WolframInstitute/InfraElements)
+- [InfraGaugeTheory](https://github.com/WolframInstitute/InfraGaugeTheory)
+- [InfraAnalysis](https://github.com/WolframInstitute/InfraAnalysis)
+- [InfraCausality](https://github.com/WolframInstitute/InfraCausality)
+- [InfraUniverseRegistry](https://github.com/WolframInstitute/InfraUniverseRegistry)
+- [PersistenceRewriting](https://github.com/WolframInstitute/PersistenceRewriting)
+- [UniversalityDB](https://github.com/WolframInstitute/UniversalityDB)
+- [IteratedFiniteAutomaton](https://github.com/WolframInstitute/IteratedFiniteAutomaton)
+- [MathNotebook](https://github.com/WolframInstitute/MathNotebook)
+- [ClaudePluginComputationalResearch](https://github.com/WolframInstitute/ClaudePluginComputationalResearch)
+- [ClaudePluginMarketplace](https://github.com/WolframInstitute/ClaudePluginMarketplace)
 
 ## Links
 - [Wolfram Community][WolframCommunity].

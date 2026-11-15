@@ -8,6 +8,9 @@ nav-name:   home
 
 Hi, I'm Pavel Hájek from Prague, Czech Republic, and this is my personal website.
 I studied mathematics and physics and have worked as a mathematician, software engineer, and computational researcher at the Wolfram Institute.
+
+**[Work with me](WorkWithMe.html)**
+
 Browse by the categories below or see all [Posts](Posts.html) at once.
 
 * **[Math](Math.html)**

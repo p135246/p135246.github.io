@@ -32,7 +32,8 @@ Note that Carlos has also introduced his alternative to LaTeX papers: [Hyperiad]
 
 During my time at the Institute, I also started several [other repositories](#my-wolfram-institute-repositories) and scientific projects, which I plan to pursue further through our [Multihistory collaboration](https://multihistory.org/).
 
-## My Wolfram Institute repositories
+## Wolfram Institute repositories
+{: #my-wolfram-institute-repositories }
 
 - [InfraGeometry](https://github.com/WolframInstitute/InfraGeometry)
 - [DiscreteGeometry](https://github.com/WolframInstitute/DiscreteGeometry)

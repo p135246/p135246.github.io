@@ -14,7 +14,7 @@ Please use the [contact form][contact] to get in touch and briefly describe what
 
 ## Services
 
-**Mathematization.** I can dig into unfamiliar fields where the ideas are still sketchy, choose the right definitions, formulate statements, and prove and formalize results. The work starts with an idea and ends with a theory. [Infrageometry][infrageometry], [My Wolfram Institute repositories][institute-repositories]
+**Mathematization.** I can dig into unfamiliar fields where the ideas are still sketchy, choose the right definitions, formulate statements, and prove and formalize results. The work starts with an idea and ends with a theory. [Infrageometry][infrageometry], [Wolfram Institute repositories][institute-repositories]
 
 **De-LLMification.** I can sort through AI-generated artifacts and transform raw information into a piece of work that can be owned and transferred to another human. [Computational Research][computational-research]
 
@@ -24,7 +24,7 @@ Please use the [contact form][contact] to get in touch and briefly describe what
 
 **Scientific Communication.** I can help with scientific outreach, including contacting the right people and presenting results in a paper, repository, or interactive website. I can also set up and advertise livestreams or help make animations and music with AI. [MultiHistory][multihistory], [EigenAudio on YouTube][eigenaudio], [MultiHistory Science on YouTube][multihistory-youtube]
 
-## Mathematics as a universal specialization in times of AI
+## Mathematics and AI
 
 AI now expands the amount of information available to us autonomously and at great speed. However, it also lets us move across domains and explain deep problems in seconds. I think that in this setting the most valuable aspects of human specialization are the transferable ones. And mathematics provides, in my opinion, a universal specialization. It teaches us to establish a few stable points of understanding and use them as signposts while searching for and documenting a simple path through the vast landscape of information. At the end of that path, we gain fundamental human understanding, ownership, and mastery, along with the ability to share what we have learned in terms our human communities can understand.
 

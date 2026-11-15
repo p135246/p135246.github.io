@@ -29,7 +29,7 @@ Please use the [contact form][contact] to get in touch and briefly describe what
 AI now expands the amount of information available to us autonomously and at great speed. However, it also lets us move across domains and explain deep problems in seconds. I think that in this setting the most valuable aspects of human specialization are the transferable ones. And mathematics provides, in my opinion, a universal specialization. It teaches us to establish a few stable points of understanding and use them as signposts while searching for and documenting a simple path through the vast landscape of information. At the end of that path, we gain fundamental human understanding, ownership, and mastery, along with the ability to share what we have learned in terms our human communities can understand.
 
 [contact]: /Contact.html
-[infrageometry]: {% post_url Wolfram/2026-05-30-infrageometry-manifesto %}
+[infrageometry]: https://github.com/p135246/InfraGeometry
 [institute-repositories]: {% post_url Math/2026-11-15-wolfram-involvement %}#my-wolfram-institute-repositories
 [computational-research]: {% post_url Wolfram/2026-03-04-ai-assisted-computational-research %}
 [chern-simons]: https://github.com/p135246/ChernSimons

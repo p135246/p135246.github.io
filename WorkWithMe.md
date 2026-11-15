@@ -16,7 +16,7 @@ Please use the [contact form][contact] to get in touch and briefly describe what
 
 **Mathematization.** I can dig into unfamiliar fields where the ideas are still sketchy, choose the right definitions, formulate statements, and prove and formalize results. The work starts with an idea and ends with a theory. [Infrageometry][infrageometry], [My Wolfram Institute repositories][institute-repositories]
 
-**De-LLMification.** I can sort through AI-generated artifacts and transform raw information into a piece of work that can be owned and transferred to another human. [Computational research and AI][computational-research]
+**De-LLMification.** I can sort through AI-generated artifacts and transform raw information into a piece of work that can be owned and transferred to another human. [Computational Research][computational-research]
 
 **Computification.** My training at Wolfram taught me to look for ways to make things computable. I can design a language for a problem or area with natural parameters and an effective, modular API. I take into account accessibility for people and AI agents so that the result can be used to scaffold experiments, test hypotheses in bounded cases, or support technical writing with computational checks. [ChernSimons][chern-simons]
 
@@ -31,7 +31,7 @@ AI now expands the amount of information available to us autonomously and at gre
 [contact]: /Contact.html
 [infrageometry]: https://github.com/p135246/InfraGeometry
 [institute-repositories]: {% post_url Math/2026-11-15-wolfram-involvement %}#my-wolfram-institute-repositories
-[computational-research]: {% post_url Wolfram/2026-03-04-ai-assisted-computational-research %}
+[computational-research]: https://github.com/p135246/CodexPluginComputationalResearch
 [chern-simons]: https://github.com/p135246/ChernSimons
 [community-mentions]: https://community.wolfram.com/search?q=Hajek
 [multihistory]: https://multihistory.org/

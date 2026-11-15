@@ -13,7 +13,7 @@ Please use the [contact form][contact] to get in touch and briefly describe what
 
 I’m registered as a freelancer (Freiberufler) in Germany and have a German VAT number.
 
-## Services
+## How I can help
 
 **Mathematization.** I can dig into unfamiliar fields where the ideas are still sketchy, choose good definitions, formalize claims, and prove results. [Infrageometry][infrageometry], [Wolfram Institute repositories][institute-repositories]
 

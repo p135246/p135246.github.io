@@ -15,15 +15,15 @@ I’m registered as a freelancer (Freiberufler) in Germany and have a German VAT
 
 ## Services
 
-**Mathematization.** I can dig into unfamiliar fields where the ideas are still sketchy, choose the right definitions, formulate statements, and prove and formalize results. The work starts with an idea and ends with a theory. [Infrageometry][infrageometry], [Wolfram Institute repositories][institute-repositories]
+**Mathematization.** I can dig into unfamiliar fields where the ideas are still sketchy, choose good definitions, formalize claims, and prove results. [Infrageometry][infrageometry], [Wolfram Institute repositories][institute-repositories]
 
-**De-LLMification.** I can sort through AI-generated artifacts and transform raw information into a piece of work that can be owned and transferred to another human. [Computational Research][computational-research]
+**De-LLMification.** I can process AI-generated artifacts and turn raw information into a clear, organized piece of work that a person can take ownership of. [Computational Research][computational-research]
 
-**Computification.** My training at Wolfram taught me to look for ways to make things computable. I can design a language for a problem or area with natural parameters and an effective, modular API. I take into account accessibility for people and AI agents so that the result can be used to scaffold experiments, test hypotheses in bounded cases, or support technical writing with computational checks. [ChernSimons][chern-simons]
+**Computification.** My training at Wolfram taught me to look for ways to make things computable. I can design a language for a problem or area with natural parameters and an API accessible to both people and AI agents. The result can be used to scaffold experiments, test hypotheses in bounded cases, or support technical writing with computational checks. [ChernSimons][chern-simons]
 
-**Mentorship.** I enjoy supporting people in doing research they’re happy with and sharing what they find. I can help formulate a research question, scope a research area, define the output, and give ongoing feedback. I ask questions, pedantically push for details, and help keep the work on track. I can also help get a project unstuck and find a way forward when it seems like a lost cause. [Wolfram Community mentions][community-mentions]
+**Mentorship.** I enjoy supporting people in doing research they’re happy with and sharing what they find. I can help formulate a research question, scope a research area, define the output, and give ongoing feedback. I ask questions, push for details and clarity, and help keep the work on track. I can also help get a project unstuck and find a way forward when it seems like a lost cause. [Wolfram Community mentions][community-mentions]
 
-**Scientific Communication.** I can help with scientific outreach, including contacting the right people and presenting results in a paper, repository, or interactive website. I can also set up and advertise livestreams or help make animations and music with AI. [MultiHistory][multihistory], [EigenAudio on YouTube][eigenaudio], [MultiHistory Science on YouTube][multihistory-youtube]
+**Scientific Communication.** I can help with scientific outreach, including contacting the right people and presenting results in a paper, repository, or interactive website. I can also set up and advertise livestreams or help make animations and music with AI. [MultiHistory][multihistory], [MultiHistory Science on YouTube][multihistory-youtube], [EigenAudio on YouTube][eigenaudio]
 
 ## Mathematics and AI
 

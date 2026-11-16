@@ -35,6 +35,8 @@ During my time at the Institute, I also started several [other repositories](#my
 ## Wolfram Institute repositories
 {: #my-wolfram-institute-repositories }
 
+I worked on these repositories during the AI revolution. I tried to put sound mathematics into them, but at some point I let AI loose, and much of what it generated still needs de-LLMification.
+
 - [InfraGeometry](https://github.com/WolframInstitute/InfraGeometry)
 - [DiscreteGeometry](https://github.com/WolframInstitute/DiscreteGeometry)
 - [SyntheticInfrageometry](https://github.com/WolframInstitute/SyntheticInfrageometry)

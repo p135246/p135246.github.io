@@ -7,6 +7,9 @@ utterances: true
 
 # Infrageometry talks in Srní and Madrid
 
+**November 2026 update.** I now use *emergent geometry* for what I previously called infrageometry. I’ve consolidated the work in the [InfraGeometry][infra-geometry] repository and will continue developing it there until it is superseded by the emergent geometry initiative of our [Multihistory][multihistory-github] collaboration. See my [Wolfram Institute Involvement][wolfram-involvement] post for clarification.
+{: .post-update }
+
 One of the projects we are developing at the [Wolfram Institute][WI] is **Infrageometry**: a version of discrete geometry designed as a backbone for the [Wolfram Physics Project][WP]. Instead of discretizing smooth geometry, the approach goes in the opposite direction. It asks how an observer living on a discrete, indivisible substrate would perceive geometry, and how such perception evolves and branches as the underlying structure is refined.
 
 Concretely, we build minimal models of geometric phenomena on graphs and hypergraphs and study the evolution of observables under hypergraph rewriting. We explore these models across different rules (ruliology), across different branches of multiway evolution (non-determinism), and in the limit of many updates (emergence). By effectively running our own computational universe, we revisit the timeless question of how simple systems give rise to complex behavior that resembles smooth geometry. A concrete mathematical incarnation of this would be generating solutions of PDEs through rewriting.
@@ -41,3 +44,7 @@ The next major event is the [Wolfram Models Conference][wmc] in Austin (April 17
 [summer-school]: https://community.wolfram.com/groups/-/m/t/3570717
 [wmc]: https://wolframinstitute.org/wolfram-models-conference
 [jtf]: https://www.templeton.org/
+
+[wolfram-involvement]: {% post_url Math/2026-11-15-wolfram-involvement %}
+[infra-geometry]: https://github.com/p135246/InfraGeometry
+[multihistory-github]: https://github.com/Multihistory

@@ -228,3 +228,10 @@ main {
   vertical-align: middle;
 }
 
+.post-update {
+  background-color: rgba(173, 216, 230, 0.22);
+  border-left: 3px solid lightblue;
+  border-radius: 4px;
+  font-style: italic;
+  padding: 0.7em 0.9em;
+}

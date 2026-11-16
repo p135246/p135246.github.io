@@ -7,7 +7,8 @@ utterances: true
 
 # An Infrageometric Crossroad
 
-**November 2026 update.** My understanding of what infrageometry should be has evolved since I wrote this post. I now use *emergent geometry* for this line of work. My [Wolfram Institute Involvement][wolfram-involvement] post points to the confusion. I’ve consolidated the code and theoretical work in the [InfraGeometry][infra-geometry] repository, where I’ll continue developing it until it is superseded by the emergent geometry initiative of our [Multihistory][multihistory-github] collaboration.
+**November 2026 update.** I now use *emergent geometry* for what I previously called infrageometry. I’ve consolidated the work in the [InfraGeometry][infra-geometry] repository and will continue developing it there until it is superseded by the emergent geometry initiative of our [Multihistory][multihistory-github] collaboration. See my [Wolfram Institute Involvement][wolfram-involvement] post for clarification.
+{: .post-update }
 
 ## Original post
 
@@ -38,7 +39,7 @@ Assuming this is a good model of the real world, we are answering the question o
 For some very early work, see:
 
 - the [talks in Srní and Madrid][talks]
-- the [Austin conference post][austin-post] (to be published soon)
+- the [Austin conference post][austin-post]
 
 I am currently developing the following repositories:
 

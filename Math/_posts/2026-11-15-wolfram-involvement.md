@@ -35,7 +35,7 @@ During my time at the Institute, I also started several [other repositories](#my
 ## Wolfram Institute repositories
 {: #my-wolfram-institute-repositories }
 
-I worked on these repositories during the AI revolution. I tried to put sound mathematics into them, but at some point I let AI loose, and much of what it generated still needs de-LLMification.
+I worked on these repositories in the middle of the AI revolution. I tried to keep the mathematics sound, but eventually I let AI loose, and it left behind a fair amount of material that still needs to be [de-LLMified][de-llmification].
 
 - [InfraGeometry](https://github.com/WolframInstitute/InfraGeometry)
 - [DiscreteGeometry](https://github.com/WolframInstitute/DiscreteGeometry)
@@ -63,5 +63,6 @@ I worked on these repositories during the AI revolution. I tried to put sound ma
 [WolframCommunity]:https://community.wolfram.com/web/hajekpavel
 [WolframEvents]:https://events.wolfram.com/
 [WolframBlog]:https://writings.stephenwolfram.com/
+[de-llmification]: {% link WorkWithMe.md %}#de-llmification
 
 {% include post-index.html posts=site.categories.Wolfram heading="Related Wolfram posts" %}

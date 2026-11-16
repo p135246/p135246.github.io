@@ -18,6 +18,7 @@ I’m registered as a freelancer (Freiberufler) in Germany and have a German VAT
 **Mathematization.** I can dig into unfamiliar fields where the ideas are still sketchy, choose good definitions, formalize claims, and prove results. [Infrageometry][infrageometry], [Wolfram Institute repositories][institute-repositories]
 
 **De-LLMification.** I can process AI-generated artifacts and turn raw information into a clear, organized piece of work that a person can take ownership of. [Computational Research][computational-research]
+{: #de-llmification }
 
 **Computification.** My training at Wolfram taught me to look for ways to make things computable. I can design a language for a problem or area with natural parameters and an API accessible to both people and AI agents. The result can be used to scaffold experiments, test hypotheses in bounded cases, or support technical writing with computational checks. [ChernSimons][chern-simons]
 

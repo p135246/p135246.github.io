@@ -4,6 +4,7 @@ layout:     post
 categories: [Math, Software]
 pinned:     true
 last_updated: 2026-11-15
+utterances: true
 ---
 # Wolfram Institute Involvement
 
